@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-02-21 16:42:11 -->
+<!-- RELEASE TIME : 2022-02-21 18:32:06 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>fcfbfad23eee3ba12be58d65ac336ca9</td>
+       <td>CVE-2021-44142</td>
+       <td>2022-02-21 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Samba vfs_fruit module uses extended file attributes (EA, xattr) to provide "...enhanced compatibility with Apple SMB clients and interoperability with a Netatalk 3 AFP fileserver." Samba versions prior to 4.13.17, 4.14.12 and 4.15.5 with vfs_fruit configured allow out-of-bounds heap read and write via specially crafted extended file attributes. A remote attacker with write access to extended file attributes can execute arbitrary code with the privileges of smbd, typically root.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44142">详情</a></td>
+      </tr>
+
+      <tr>
        <td>7574ae6035c97c59ad19bf3c84cabf0a</td>
        <td>CVE-2022-0692</td>
        <td>2022-02-21 13:15:00 <img src="imgs/new.gif" /></td>
@@ -513,14 +521,6 @@
        <td>2022-02-19 17:15:00</td>
        <td>Cross-site Scripting (XSS) - Reflected in Packagist microweber/microweber prior to 1.2.11.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0690">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ac5ff3409526345eaf0526d649482b95</td>
-       <td>CVE-2016-1239</td>
-       <td>2022-02-19 17:15:00</td>
-       <td>duck before 0.10 did not properly handle loading of untrusted code from the current directory..</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2016-1239">详情</a></td>
       </tr>
 
      </tbody>
