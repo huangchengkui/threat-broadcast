@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-03-16 03:32:37 -->
+<!-- RELEASE TIME : 2022-03-16 08:32:32 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,62 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6c736e6b0fe349313075914e6835c0d1</td>
+       <td>CVE-2022-27225</td>
+       <td>2022-03-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Gradle Enterprise before 2021.4.3 relies on cleartext data transmission in some situations. It uses Keycloak for identity management services. During the sign-in process, Keycloak sets browser cookies that effectively provide remember-me functionality. For backwards compatibility with older Safari versions, Keycloak sets a duplicate of the cookie without the Secure attribute, which allows the cookie to be sent when accessing the location that cookie is set for via HTTP. This creates the potential for an attacker (with the ability to impersonate the Gradle Enterprise host) to capture the login session of a user by having them click an http:// link to the server, despite the real server requiring HTTPS.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27225">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>16643c778b5dc78e84c33dae447422b9</td>
+       <td>CVE-2021-43958</td>
+       <td>2022-03-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Various rest resources in Fisheye and Crucible before version 4.8.9 allowed remote attackers to brute force user login credentials as rest resources did not check if users were beyond their max failed login limits and therefore required solving a CAPTCHA in addition to providing user credentials for authentication via a improper restriction of excess authentication attempts vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43958">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>869b1395544196f6337922f7c600c295</td>
+       <td>CVE-2021-43957</td>
+       <td>2022-03-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Affected versions of Atlassian Fisheye & Crucible allowed remote attackers to browse local files via an Insecure Direct Object References (IDOR) vulnerability in the WEB-INF directory and bypass the fix for CVE-2020-29446 due to a lack of url decoding. The affected versions are before version 4.8.9.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43957">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b1e4cf45a4724cef8213d6a0f8f1c488</td>
+       <td>CVE-2021-43956</td>
+       <td>2022-03-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>The jQuery deserialize library in Fisheye and Crucible before version 4.8.9 allowed remote attackers to to inject arbitrary HTML and/or JavaScript via a prototype pollution vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43956">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>17af0e99e23645036a948bb2ee40cf4a</td>
+       <td>CVE-2021-43955</td>
+       <td>2022-03-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>The /rest-service-fecru/server-v1 resource in Fisheye and Crucible before version 4.8.9 allowed authenticated remote attackers to obtain information about installation directories via information disclosure vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43955">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>416c17aa1e3dc516f27b2580e5e6dc8b</td>
+       <td>CVE-2022-27223</td>
+       <td>2022-03-16 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>In drivers/usb/gadget/udc/udc-xilinx.c in the Linux kernel before 5.16.12, the endpoint index is not validated and might be manipulated by the host for out-of-array access.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27223">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7281a83c9f655ee372f19d08b3c6dda2</td>
+       <td>CVE-2020-36519</td>
+       <td>2022-03-16 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Mimecast Email Security before 2020-01-10 allows any admin to spoof any domain, and pass DMARC alignment via SPF. This occurs through misuse of the address rewrite feature. (The domain being spoofed must be a customer in the Mimecast grid from which the spoofing occurs.)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-36519">详情</a></td>
+      </tr>
+
+      <tr>
        <td>310ede76f4fd994a1bffc956cd360484</td>
        <td>CVE-2022-27005</td>
        <td>2022-03-15 22:15:00 <img src="imgs/new.gif" /></td>
@@ -465,62 +521,6 @@
        <td>2022-03-15 17:15:00 <img src="imgs/new.gif" /></td>
        <td>Jenkins dbCharts Plugin 0.5.2 and earlier stores JDBC connection passwords unencrypted in its global configuration file on the Jenkins controller where they can be viewed by users with access to the Jenkins controller file system.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27216">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>85b234987602fbff48657be552380865</td>
-       <td>CVE-2022-27215</td>
-       <td>2022-03-15 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>A missing permission check in Jenkins Release Helper Plugin 1.3.3 and earlier allows attackers with Overall/Read permission to connect to an attacker-specified URL using attacker-specified credentials.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27215">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5a2dadb4148de9707832410bd1bb9e4a</td>
-       <td>CVE-2022-27214</td>
-       <td>2022-03-15 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>A cross-site request forgery (CSRF) vulnerability in Jenkins Release Helper Plugin 1.3.3 and earlier allows attackers to connect to an attacker-specified URL using attacker-specified credentials.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27214">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aaf9d5d8db7a9440d4423178df1adf7a</td>
-       <td>CVE-2022-27213</td>
-       <td>2022-03-15 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Jenkins Environment Dashboard Plugin 1.1.10 and earlier does not escape the Environment order and the Component order configuration values in its views, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers with View/Configure permission.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27213">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>413bcd4ed5a4694865f787b40532fc10</td>
-       <td>CVE-2022-27212</td>
-       <td>2022-03-15 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Jenkins List Git Branches Parameter Plugin 0.0.9 and earlier does not escape the name of the 'List Git branches (and more)' parameter, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers with Item/Configure permission.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27212">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f47b692254e448920c12d0ea59a3d4bc</td>
-       <td>CVE-2022-27211</td>
-       <td>2022-03-15 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>A missing/An incorrect permission check in Jenkins Kubernetes Continuous Deploy Plugin 2.3.1 and earlier allows attackers with Overall/Read permission to connect to an attacker-specified SSH server using attacker-specified credentials IDs obtained through another method, capturing credentials stored in Jenkins.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27211">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>15c769ab581316c4f362c0781a5a4888</td>
-       <td>CVE-2022-27210</td>
-       <td>2022-03-15 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>A cross-site request forgery (CSRF) vulnerability in Jenkins Kubernetes Continuous Deploy Plugin 2.3.1 and earlier allows attackers to connect to an attacker-specified SSH server using attacker-specified credentials IDs obtained through another method, capturing credentials stored in Jenkins.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27210">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>facc7e46bd33eb764cec31238bbcfaa6</td>
-       <td>CVE-2022-27209</td>
-       <td>2022-03-15 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>A missing permission check in Jenkins Kubernetes Continuous Deploy Plugin 2.3.1 and earlier allows attackers with Overall/Read permission to enumerate credentials IDs of credentials stored in Jenkins.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27209">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>09f3c34256d5dd6879175d864664786b</td>
+       <td>CVE-2021-22984</td>
+       <td>2022-03-16 13:52:48 <img src="imgs/new.gif" /></td>
+       <td>F5 BIG-IP ASM 输入验证错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ecbc4c2e82324a8fb8e7666f7d68f753">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>88aae53390b28507f4096b33b0982175</td>
+       <td>CVE-2021-22980</td>
+       <td>2022-03-16 13:52:44 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Edge 代码问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e2feee275b2f491885590ba28fa2c6bf">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8d34a93117ad78ad6016d3b5dbcca9dc</td>
+       <td>CVE-2021-22983</td>
+       <td>2022-03-16 13:52:44 <img src="imgs/new.gif" /></td>
+       <td>F5 BIG-IP AFM 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=737cd365b92d4708be6328046b07e8ba">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e8dc925e6d20aa2ef5265996dc83aea5</td>
+       <td>CVE-2021-22977</td>
+       <td>2022-03-16 13:52:38 <img src="imgs/new.gif" /></td>
+       <td>BIG-IP 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3df6d840de3c4d2f9ae103da86ce3a8c">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>17312b659cafb8d887f121f17a1a155c</td>
+       <td>CVE-2021-22979</td>
+       <td>2022-03-16 13:52:36 <img src="imgs/new.gif" /></td>
+       <td>BIG-IP 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e591027642334675a41a987318a57bba">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c46f6d602a860895142bc8f60530f5b9</td>
+       <td>CVE-2021-22976</td>
+       <td>2022-03-16 13:52:29 <img src="imgs/new.gif" /></td>
+       <td>BIG-IP Advanced WAF 和 ASM 资源管理错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ee893789f54a49ebad9435f5197d06d2">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c04740d570a23877d00fbec5711e97ef</td>
+       <td>CVE-2021-22973</td>
+       <td>2022-03-16 13:52:25 <img src="imgs/new.gif" /></td>
+       <td>F5 BIG-IP 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=272c0181b2404376a253cd6463927b9c">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0b7dcf35b2c7a8a16174baa60aaa6a12</td>
+       <td>CVE-2021-22553</td>
+       <td>2022-03-16 13:52:21 <img src="imgs/new.gif" /></td>
+       <td>Jetty 资源管理错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=69b4c62f9f0542738cf9e5ceffdba800">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bca07fb8d3582cdb1264f99982dee0e6</td>
+       <td>CVE-2021-22174</td>
+       <td>2022-03-16 13:52:17 <img src="imgs/new.gif" /></td>
+       <td>Wireshark 资源管理错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=880e3666037944d8aba9529567d67cfd">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b61669156ec3edb0b0507d5d9ad81dcd</td>
+       <td>CVE-2021-22112</td>
+       <td>2022-03-16 13:52:13 <img src="imgs/new.gif" /></td>
+       <td>Vmware VMware Spring Security 权限许可和访问控制问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=eb1e975f5389486d8eb14f51a6d740af">详情</a></td>
+      </tr>
+
+      <tr>
        <td>7b6e8785a58994d288e6646d92da11a2</td>
        <td>CVE-2021-20328</td>
        <td>2022-03-15 13:48:47 <img src="imgs/new.gif" /></td>
@@ -1833,86 +1913,6 @@
        <td>2022-03-14 13:48:07</td>
        <td>Revive Adserver 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=32926d9f385540298d19b0374f977d3d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a9f2e25ba12e4365c758159908896d63</td>
-       <td>CVE-2021-22871</td>
-       <td>2022-03-13 13:51:48</td>
-       <td>Revive Adserver 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8d093d8fc75b41e889a37585bc015798">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>422cf3872d9bd36187cda7abc83bd040</td>
-       <td>CVE-2020-9492</td>
-       <td>2022-03-13 13:51:43</td>
-       <td>Apache Hadoop 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=00860db644e04507a987d41a41430b06">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bb33a614caa9a235d6718285b3545ae3</td>
-       <td>CVE-2021-22872</td>
-       <td>2022-03-13 13:51:40</td>
-       <td>Revive Adserver 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5184afd7ec74457db5d277c6982f3164">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d09b834e2a697fa77835e0a9c5a001d7</td>
-       <td>CVE-2020-8292</td>
-       <td>2022-03-13 13:51:36</td>
-       <td>Rocket.Chat 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fdb5bb4598554aee9687a2e1daa7f8d7">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>358ea6d41aed784e40385b86bf637c9d</td>
-       <td>CVE-2021-21723</td>
-       <td>2022-03-13 13:51:33</td>
-       <td>多款 ZTE 产品资源管理错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e1f01942cc8e4f7b8af90a818691517d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c4d33e7340c9c6f36f03452b705666a4</td>
-       <td>CVE-2021-21615</td>
-       <td>2022-03-13 13:51:29</td>
-       <td>Cloudbees Jenkins 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ae4a24c8277645669771684eacc1b2e9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5a99e77fc8eac6a8e18a77b27abe8d7a</td>
-       <td>CVE-2020-4949</td>
-       <td>2022-03-13 13:51:25</td>
-       <td>Ibm Websphere AS 代码问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=33e9875ba7d3475c87cb9542093f5d71">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a3134f6d39a96a6a6ca108fcc5f9d4bc</td>
-       <td>CVE-2020-8295</td>
-       <td>2022-03-13 13:51:21</td>
-       <td>Nextcloud 资源管理错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6b19733525d84eca9fcb6bd3075263de">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c0c45d646149223e2384ddd71606b284</td>
-       <td>CVE-2020-8293</td>
-       <td>2022-03-13 13:51:17</td>
-       <td>Nextcloud 资源管理错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9de63706788c4e3780998f49110d43c9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2b1d254f682a2c03b2e8e989bf0e9f36</td>
-       <td>CVE-2020-36229</td>
-       <td>2022-03-13 13:51:12</td>
-       <td>OpenLDAP 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=76eeba9ec2084e0380565c18059dcf32">详情</a></td>
       </tr>
 
      </tbody>
