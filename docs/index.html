@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-03-18 12:47:19 -->
+<!-- RELEASE TIME : 2022-03-18 13:31:45 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>16bd788fb1ef3bff7f8faf60d7f0def0</td>
+       <td>CVE-2022-24655</td>
+       <td>2022-03-18 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>A stack overflow vulnerability exists in the upnpd service in Netgear EX6100v1 201.0.2.28, CAX80 2.1.2.6, and DC112A 1.0.0.62, which may lead to the execution of arbitrary code without authentication.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24655">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>62746e323f71a277f8c18c3639278f16</td>
+       <td>CVE-2021-45835</td>
+       <td>2022-03-18 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Online Admission System 1.0 allows an unauthenticated attacker to upload or transfer files of dangerous types to the application through documents.php, which may be used to execute malicious code or lead to code execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45835">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c58e5887b54fc8c1c58920eea79420fe</td>
+       <td>CVE-2021-45834</td>
+       <td>2022-03-18 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>An attacker can upload or transfer files of dangerous types to the OpenDocMan 1.4.4 portal via add.php using MIME-bypass, which may be automatically processed within the product's environment or lead to arbitrary code execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45834">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>acf4c480efea893103be9e82bba150e5</td>
+       <td>CVE-2021-22571</td>
+       <td>2022-03-18 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>A local attacker could read files from some other users' SA360 reports stored in the /tmp folder during staging process before the files are loaded in BigQuery. We recommend upgrading to version 1.0.3 or above.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-22571">详情</a></td>
+      </tr>
+
+      <tr>
        <td>99207fbd485b3381e199eccac4cb4f62</td>
        <td>CVE-2022-27191</td>
        <td>2022-03-18 07:15:00 <img src="imgs/new.gif" /></td>
@@ -489,38 +521,6 @@
        <td>2022-03-17 16:15:00 <img src="imgs/new.gif" /></td>
        <td>Minimist <=1.2.5 is vulnerable to Prototype Pollution via file index.js, function setKey() (lines 69-95).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44906">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b38ebd29149d0fc7aba1a0cafac83b8d</td>
-       <td>CVE-2020-15591</td>
-       <td>2022-03-17 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>fexsrv in F*EX (aka Frams' Fast File EXchange) before fex-20160919_2 allows eval injection (for unauthenticated remote code execution).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-15591">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>399b94fce2afefd040283766f09d62d0</td>
-       <td>CVE-2022-24761</td>
-       <td>2022-03-17 13:15:00 <img src="imgs/new.gif" /></td>
-       <td>Waitress is a Web Server Gateway Interface server for Python 2 and 3. When using Waitress versions 2.1.0 and prior behind a proxy that does not properly validate the incoming HTTP request matches the RFC7230 standard, Waitress and the frontend proxy may disagree on where one request starts and where it ends. This would allow requests to be smuggled via the front-end proxy to waitress and later behavior. There are two classes of vulnerability that may lead to request smuggling that are addressed by this advisory: The use of Python's `int()` to parse strings into integers, leading to `+10` to be parsed as `10`, or `0x01` to be parsed as `1`, where as the standard specifies that the string should contain only digits or hex digits; and Waitress does not support chunk extensions, however it was discarding them without validating that they did not contain illegal characters. This vulnerability has been patched in Waitress 2.1.1. A workaround is available. When deploying a proxy in front of waitress, turning on any and all functionality to make sure that the request matches the RFC7230 standard. Certain proxy servers may not have this functionality though and users are encouraged to upgrade to the latest version of waitress instead.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24761">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c6229d91b4045f59442782d253b7017e</td>
-       <td>CVE-2021-44262</td>
-       <td>2022-03-17 13:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability is in the 'MNU_top.htm' page of the Netgear W104, version WAC104-V1.0.4.13, which can allow a remote attacker to access this page without any authentication. When processed, it exposes some key information for the device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44262">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>024d979960569ca5aa09d20affc4dd7f</td>
-       <td>CVE-2021-44261</td>
-       <td>2022-03-17 13:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability is in the 'BRS_top.html' page of the Netgear W104, version WAC104-V1.0.4.13, which can allow a remote attacker to access this page without any authentication. When processed, it exposes firmware version information for the device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44261">详情</a></td>
       </tr>
 
      </tbody>
