@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-03-18 14:26:35 -->
+<!-- RELEASE TIME : 2022-03-18 15:30:58 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>3bd52024aa22121b4ad733dc98f14422</td>
+       <td>CVE-2022-24595</td>
+       <td>2022-03-18 12:15:00 <img src="imgs/new.gif" /></td>
+       <td>Automotive Grade Linux Kooky Koi 11.0.0, 11.0.1, 11.0.2, 11.0.3, 11.0.4, and 11.0.5 is affected by Incorrect Access Control in usr/bin/afb-daemon. To exploit the vulnerability, an attacker should send a well-crafted HTTP (or WebSocket) request to the socket listened by the afb-daemon process. No credentials nor user interactions are required.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24595">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b94014297c9ba9d384ed5534dfc7c90d</td>
+       <td>CVE-2022-0742</td>
+       <td>2022-03-18 12:15:00 <img src="imgs/new.gif" /></td>
+       <td>Memory leak in icmp6 implementation in Linux Kernel 5.13+ allows a remote attacker to DoS a host by making it go out-of-memory via icmp6 packets of type 130 or 131. We recommend upgrading past commit 2d3916f3189172d5c69d33065c3c21119fe539fc.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0742">详情</a></td>
+      </tr>
+
+      <tr>
        <td>16bd788fb1ef3bff7f8faf60d7f0def0</td>
        <td>CVE-2022-24655</td>
        <td>2022-03-18 11:15:00 <img src="imgs/new.gif" /></td>
@@ -505,22 +521,6 @@
        <td>2022-03-17 17:15:00 <img src="imgs/new.gif" /></td>
        <td>`@chainsafe/libp2p-noise` contains TypeScript implementation of noise protocol, an encryption protocol used in libp2p. `@chainsafe/libp2p-noise` before 4.1.2 and 5.0.3 does not correctly validate signatures during the handshake process. This may allow a man-in-the-middle to pose as other peers and get those peers banned. Users should upgrade to version 4.1.2 or 5.0.3 to receive a patch. There are currently no known workarounds.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24759">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>23a564043c2e4c845a8518392b2a846a</td>
-       <td>CVE-2022-26526</td>
-       <td>2022-03-17 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>Anaconda Anaconda3 through 2021.11.0.0 and Miniconda3 through 11.0.0.0 can create a world-writable directory under %PROGRAMDATA% and place that directory into the system PATH environment variable. Thus, for example, local users can gain privileges by placing a Trojan horse file into that directory. (This problem can only happen in a non-default installation. The person who installs the product must specify that it is being installed for all users. Also, the person who installs the product must specify that the system PATH should be changed.)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26526">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ff836e91a71f511461d7a74bfd79b6fe</td>
-       <td>CVE-2021-44906</td>
-       <td>2022-03-17 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>Minimist <=1.2.5 is vulnerable to Prototype Pollution via file index.js, function setKey() (lines 69-95).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44906">详情</a></td>
       </tr>
 
      </tbody>
