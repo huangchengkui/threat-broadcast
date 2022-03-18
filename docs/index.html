@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-03-18 09:28:21 -->
+<!-- RELEASE TIME : 2022-03-18 12:47:19 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,62 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>99207fbd485b3381e199eccac4cb4f62</td>
+       <td>CVE-2022-27191</td>
+       <td>2022-03-18 07:15:00 <img src="imgs/new.gif" /></td>
+       <td>golang.org/x/crypto/ssh before 0.0.0-20220314234659-1baeb1ce4c0b in Go through 1.16.15 and 1.17.x through 1.17.8 allows an attacker to crash a server in certain circumstances involving AddHostKey.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27191">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e6c74a70f66ba76f554a398435d1ddd7</td>
+       <td>CVE-2022-26965</td>
+       <td>2022-03-18 07:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Pluck 4.7.16, an admin user can use the theme upload functionality at /admin.php?action=themeinstall to perform remote code execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26965">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ebbb8c9b5cff4689d0f27d0fe8dc5b8e</td>
+       <td>CVE-2021-45868</td>
+       <td>2022-03-18 07:15:00 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel before 5.15.3, fs/quota/quota_tree.c does not validate the block number in the quota tree (on disk). This can, for example, lead to a kernel/locking/rwsem.c use-after-free if there is a corrupted quota file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45868">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4a0106d09bee072aa1d802c058fed7c5</td>
+       <td>CVE-2022-27240</td>
+       <td>2022-03-18 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>scheme/webauthn.c in Glewlwyd SSO server 2.x before 2.6.2 has a buffer overflow associated with a webauthn assertion.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27240">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8aca01f81bf142c447d2a44656f99744</td>
+       <td>CVE-2021-45968</td>
+       <td>2022-03-18 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in xmppserver jar in the XMPP Server component of the JIve platform, as used in Pascom Cloud Phone System before 7.20.x (and in other products). An endpoint in the backend Tomcat server of the Pascom allows SSRF, a related issue to CVE-2019-18394.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45968">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5ca16df410fd7966fa6dc26071a5b223</td>
+       <td>CVE-2021-45967</td>
+       <td>2022-03-18 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Pascom Cloud Phone System before 7.20.x. A configuration error between NGINX and a backend Tomcat server leads to a path traversal in the Tomcat server, exposing unintended endpoints.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45967">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ed164e8405787473ff5966d47fe93b76</td>
+       <td>CVE-2021-45966</td>
+       <td>2022-03-18 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Pascom Cloud Phone System before 7.20.x. In the management REST API, /services/apply in exd.pl allows remote attackers to execute arbitrary code via shell metacharacters.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-45966">详情</a></td>
+      </tr>
+
+      <tr>
        <td>0356c3a091fbc69bc2f27321d1ab3761</td>
        <td>CVE-2022-0758</td>
        <td>2022-03-17 23:15:00 <img src="imgs/new.gif" /></td>
@@ -465,62 +521,6 @@
        <td>2022-03-17 13:15:00 <img src="imgs/new.gif" /></td>
        <td>A vulnerability is in the 'BRS_top.html' page of the Netgear W104, version WAC104-V1.0.4.13, which can allow a remote attacker to access this page without any authentication. When processed, it exposes firmware version information for the device.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44261">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1b142955e6121265cad541136be62b4b</td>
-       <td>CVE-2021-44260</td>
-       <td>2022-03-17 13:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability is in the 'live_mfg.html' page of the WAVLINK AC1200, version WAVLINK-A42W-1.27.6-20180418, which can allow a remote attacker to access this page without any authentication. When processed, it exposes some key information of the manager of router.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44260">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9c9c7f481e3fe16002d99743bcbf9a61</td>
-       <td>CVE-2021-44259</td>
-       <td>2022-03-17 13:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability is in the 'wx.html' page of the WAVLINK AC1200, version WAVLINK-A42W-1.27.6-20180418, which can allow a remote attacker to access this page without any authentication. When an unauthorized user accesses this page directly, it connects to this device as a friend of the device owner.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-44259">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2aa3f909d3609b21904e2e6854db8c3c</td>
-       <td>CVE-2022-25760</td>
-       <td>2022-03-17 12:15:00 <img src="imgs/new.gif" /></td>
-       <td>All versions of package accesslog are vulnerable to Arbitrary Code Injection due to the usage of the Function constructor without input sanitization. If (attacker-controlled) user input is given to the format option of the package's exported constructor function, it is possible for an attacker to execute arbitrary JavaScript code on the host that this package is being run on.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25760">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5731b515b93a0b3eb6dc43abc2dff6fa</td>
-       <td>CVE-2022-25354</td>
-       <td>2022-03-17 12:15:00 <img src="imgs/new.gif" /></td>
-       <td>The package set-in before 2.0.3 are vulnerable to Prototype Pollution via the setIn method, as it allows an attacker to merge object prototypes into it. **Note:** This vulnerability derives from an incomplete fix of [CVE-2020-28273](https://security.snyk.io/vuln/SNYK-JS-SETIN-1048049)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25354">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>89319dbaeec1eb5da9b91d621016f4a6</td>
-       <td>CVE-2022-25352</td>
-       <td>2022-03-17 12:15:00 <img src="imgs/new.gif" /></td>
-       <td>The package libnested before 1.5.2 are vulnerable to Prototype Pollution via the set function in index.js. **Note:** This vulnerability derives from an incomplete fix for [CVE-2020-28283](https://security.snyk.io/vuln/SNYK-JS-LIBNESTED-1054930)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25352">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6553781f3ebaebfd588fb5d339829b5f</td>
-       <td>CVE-2022-25296</td>
-       <td>2022-03-17 12:15:00 <img src="imgs/new.gif" /></td>
-       <td>The package bodymen from 0.0.0 are vulnerable to Prototype Pollution via the handler function which could be tricked into adding or modifying properties of Object.prototype using a __proto__ payload. **Note:** This vulnerability derives from an incomplete fix to [CVE-2019-10792](https://security.snyk.io/vuln/SNYK-JS-BODYMEN-548897)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25296">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5410081f1b8f5d986bc9825536eacd11</td>
-       <td>CVE-2022-21221</td>
-       <td>2022-03-17 12:15:00 <img src="imgs/new.gif" /></td>
-       <td>The package github.com/valyala/fasthttp before 1.34.0 are vulnerable to Directory Traversal via the ServeFile function, due to improper sanitization. It is possible to be exploited by using a backslash %5c character in the path. **Note:** This security issue impacts Windows users only.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21221">详情</a></td>
       </tr>
 
      </tbody>
@@ -796,6 +796,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b7ffb098cf79ad27d3304ecab1507f3a</td>
+       <td>CNNVD-202203-1598 (CVE-2022-24770)</td>
+       <td>2022-03-17 12:47:18 <img src="imgs/new.gif" /></td>
+       <td>Gradio 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1598">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c56b1d1782cf516f72cdf04c5b02f44f</td>
+       <td>CNNVD-202203-1599 (CVE-2022-21822)</td>
+       <td>2022-03-17 12:47:16 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA FLARE 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1599">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>14fe0565c299f28c06e0ba78acd09797</td>
+       <td>CNNVD-202203-1600 (CVE-2021-44907)</td>
+       <td>2022-03-17 12:47:14 <img src="imgs/new.gif" /></td>
+       <td>ljharb qs 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1600">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6748a0f405631500b2719cf7a2e4cda1</td>
+       <td>CNNVD-202203-1601 (CVE-2021-46107)</td>
+       <td>2022-03-17 12:47:12 <img src="imgs/new.gif" /></td>
+       <td>Ligeo Archives 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1601">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>940e0d72f6e0746d7ecb81b5f3f6592c</td>
+       <td>CNNVD-202203-1602 (CVE-2021-44088)</td>
+       <td>2022-03-17 12:47:10 <img src="imgs/new.gif" /></td>
+       <td>Attendance and Payroll System SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1602">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9eba5c321265fa51a051173e9ba46f7f</td>
+       <td>CNNVD-202203-1603 (CVE-2021-44087)</td>
+       <td>2022-03-17 12:47:08 <img src="imgs/new.gif" /></td>
+       <td>Attendance and Payroll System 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1603">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>50f37442d5975485b8a89169d7fd1b4d</td>
+       <td>CNNVD-202203-1604 (CVE-2022-24302)</td>
+       <td>2022-03-17 12:47:06 <img src="imgs/new.gif" /></td>
+       <td>Paramiko 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1604">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0db38bc1b54272dcea7c1168fb2b447d</td>
+       <td>CNNVD-202203-1605 (CVE-2022-0237)</td>
+       <td>2022-03-17 12:47:04 <img src="imgs/new.gif" /></td>
+       <td>Rapid7 Insight Agent 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1605">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a23646d9af5e4f721147e4c260d36a9d</td>
+       <td>CNNVD-202203-1606 (CVE-2022-0757)</td>
+       <td>2022-03-17 12:47:02 <img src="imgs/new.gif" /></td>
+       <td>Rapid7 Nexpose 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1606">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7281c99138892c7f6122cf8182eb6886</td>
+       <td>CNNVD-202203-1607 (CVE-2022-0758)</td>
+       <td>2022-03-17 12:47:00 <img src="imgs/new.gif" /></td>
+       <td>Rapid7 Nexpose 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1607">详情</a></td>
+      </tr>
+
+      <tr>
        <td>249a4d96408a895c2e03eec774d2e79e</td>
        <td>CNNVD-202203-1548 (CVE-2021-42219)</td>
        <td>2022-03-16 12:48:56</td>
@@ -953,86 +1033,6 @@
        <td>2022-03-15 12:45:58</td>
        <td>Totolink X5000R和TotoLink A7000R安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1513">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>440e1eb1badf02cb2ef6fc69d49d88fe</td>
-       <td>CNNVD-202203-1384 (CVE-2021-42389)</td>
-       <td>2022-03-14 12:48:04</td>
-       <td>Clickhouse 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1384">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4cd3574423f8412ec16d8a4cc2a66090</td>
-       <td>CNNVD-202203-1385 (CVE-2022-24749)</td>
-       <td>2022-03-14 12:48:02</td>
-       <td>Sylius 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1385">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>609b9513406348c8829fdcab0a9eb0f2</td>
-       <td>CNNVD-202203-1386 (CVE-2021-42387)</td>
-       <td>2022-03-14 12:48:00</td>
-       <td>Yandex ClickHouse 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1386">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5b714ca5f6ff21b8b94135033ec11a44</td>
-       <td>CNNVD-202203-1387 (CVE-2021-43304)</td>
-       <td>2022-03-14 12:47:58</td>
-       <td>Yandex ClickHouse 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1387">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>87ef561cd0a8a23a4b707984c4fcf5a2</td>
-       <td>CNNVD-202203-1388 (CVE-2021-42390)</td>
-       <td>2022-03-14 12:47:56</td>
-       <td>Yandex ClickHouse 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1388">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>631b0e7fff2a94fccbe4937bba5b96ac</td>
-       <td>CNNVD-202203-1389 (CVE-2021-43305)</td>
-       <td>2022-03-14 12:47:54</td>
-       <td>Yandex ClickHouse 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1389">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>316f4df10051aa81c3b28a108984ed19</td>
-       <td>CNNVD-202203-1390 (CVE-2021-42391)</td>
-       <td>2022-03-14 12:47:52</td>
-       <td>Yandex ClickHouse 数字错误漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1390">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a54c49801e8d98f67d7660894b71ee6f</td>
-       <td>CNNVD-202203-1391 (CVE-2022-24740)</td>
-       <td>2022-03-14 12:47:50</td>
-       <td>Volto 授权问题漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1391">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a609db079a2a982eb22bedcb324bbdc1</td>
-       <td>CNNVD-202203-1392 (CVE-2022-24762)</td>
-       <td>2022-03-14 12:47:48</td>
-       <td>sysend.js 信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1392">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>48369b31930fa882cc0375c999babf8e</td>
-       <td>CNNVD-202203-1393 (CVE-2022-0944)</td>
-       <td>2022-03-14 12:47:46</td>
-       <td>sqlpad 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202203-1393">详情</a></td>
       </tr>
 
      </tbody>
