@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-04-30 10:32:08 -->
+<!-- RELEASE TIME : 2022-04-30 11:26:41 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>2e2ab9ec83f0f573e9a8cbd2eea2ffe0</td>
+       <td>CVE-2022-29265</td>
+       <td>2022-04-30 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>Multiple components in Apache NiFi 0.0.1 to 1.16.0 do not restrict XML External Entity references in the default configuration. The Standard Content Viewer service attempts to resolve XML External Entity references when viewing formatted XML files. The following Processors attempt to resolve XML External Entity references when configured with default property values: - EvaluateXPath - EvaluateXQuery - ValidateXml Apache NiFi flow configurations that include these Processors are vulnerable to malicious XML documents that contain Document Type Declarations with XML External Entity references. The resolution disables Document Type Declarations in the default configuration for these Processors, and disallows XML External Entity resolution in standard services.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29265">详情</a></td>
+      </tr>
+
+      <tr>
        <td>05f22aefda48a551c89c02455c3f1e1a</td>
        <td>CVE-2022-29967</td>
        <td>2022-04-29 23:15:00 <img src="imgs/new.gif" /></td>
@@ -513,14 +521,6 @@
        <td>2022-04-28 15:15:00</td>
        <td>Improper Access Control in GitHub repository snipe/snipe-it prior to 5.4.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1511">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8c35c97e582cbc03988b9ce51f2fd3cc</td>
-       <td>CVE-2021-43939</td>
-       <td>2022-04-28 15:15:00</td>
-       <td>Elcomplus SmartPTT is vulnerable when a low-authenticated user can access higher level administration authorization by issuing requests directly to the desired endpoints.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-43939">详情</a></td>
       </tr>
 
      </tbody>
