@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-08-30 03:07:09 -->
+<!-- RELEASE TIME : 2022-08-30 06:32:54 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,70 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>1e782383dca411a3d7b0a0937bb68a6b</td>
+       <td>CVE-2022-24107</td>
+       <td>2022-08-30 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>Xpdf prior to 4.04 lacked an integer overflow check in JPXStream.cc.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24107">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8213cfb6b8492401a66f820218d13f5c</td>
+       <td>CVE-2022-24106</td>
+       <td>2022-08-30 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Xpdf prior to 4.04, the DCT (JPEG) decoder was incorrectly allowing the 'interleaved' flag to be changed after the first scan of the image, leading to an unknown integer-related vulnerability in Stream.cc.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24106">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>86a488c721bf5b2ce25556919dde79c0</td>
+       <td>CVE-2022-38784</td>
+       <td>2022-08-30 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>Poppler prior to and including 22.08.0 contains an integer overflow in the JBIG2 decoder (JBIG2Stream::readTextRegionSeg() in JBIGStream.cc). Processing a specially crafted PDF file or JBIG2 image could lead to a crash or the execution of arbitrary code. This is similar to the vulnerability described by CVE-2022-38171 in Xpdf.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38784">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e91bf54ca5627b41915fe424da20ee6b</td>
+       <td>CVE-2022-36714</td>
+       <td>2022-08-30 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Library Management System v1.0 was discovered to contain a SQL injection vulnerability via the Section parameter at /staff/lab.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36714">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>448e029df3ce1320bd0f562d33f13d33</td>
+       <td>CVE-2022-36713</td>
+       <td>2022-08-30 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Library Management System v1.0 was discovered to contain a SQL injection vulnerability via the Section parameter at /librarian/lab.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36713">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a9462e3d7b80d242d0da835163a728d4</td>
+       <td>CVE-2022-36712</td>
+       <td>2022-08-30 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Library Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /staff/studentdetails.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36712">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>47467e86b138029134cae436f1b0cbce</td>
+       <td>CVE-2022-36711</td>
+       <td>2022-08-30 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Library Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /staff/bookdetails.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36711">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b6920b43bc032fa2455fdaf8bd730225</td>
+       <td>CVE-2022-36709</td>
+       <td>2022-08-30 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Library Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /staff/edit_book_details.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36709">详情</a></td>
+      </tr>
+
+      <tr>
        <td>f8d3d73a7cfea1aa7cbaa0e366b856f2</td>
        <td>CVE-2022-38625</td>
        <td>2022-08-29 23:15:00 <img src="imgs/new.gif" /></td>
@@ -457,70 +521,6 @@
        <td>2022-08-29 17:15:00 <img src="imgs/new.gif" /></td>
        <td>jsoup is a Java HTML parser, built for HTML editing, cleaning, scraping, and cross-site scripting (XSS) safety. jsoup may incorrectly sanitize HTML including `javascript:` URL expressions, which could allow XSS attacks when a reader subsequently clicks that link. If the non-default `SafeList.preserveRelativeLinks` option is enabled, HTML including `javascript:` URLs that have been crafted with control characters will not be sanitized. If the site that this HTML is published on does not set a Content Security Policy, an XSS attack is then possible. This issue is patched in jsoup 1.15.3. Users should upgrade to this version. Additionally, as the unsanitized input may have been persisted, old content should be cleaned again using the updated version. To remediate this issue without immediately upgrading: - disable `SafeList.preserveRelativeLinks`, which will rewrite input URLs as absolute URLs - ensure an appropriate [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) is defined. (This should be used regardless of upgrading, as a defence-in-depth best practice.)</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36033">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>95db5b493f8e0d247da16e8bdefdbf23</td>
-       <td>CVE-2022-27558</td>
-       <td>2022-08-29 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>HCL iNotes is susceptible to a Broken Password Strength Checks vulnerability. Custom password policies are not enforced on certain iNotes forms which could allow users to set weak passwords, leading to easier cracking.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27558">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>149d4b2ec7f8182d853bf344173bfaa0</td>
-       <td>CVE-2022-27547</td>
-       <td>2022-08-29 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>HCL iNotes is susceptible to a link to non-existent domain vulnerability. An attacker could use this vulnerability to trick a user into supplying sensitive information such as username, password, credit card number, etc.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27547">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dd1dc3bf9476345a5d0081b716aecfcd</td>
-       <td>CVE-2022-27546</td>
-       <td>2022-08-29 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>HCL iNotes is susceptible to a Reflected Cross-site Scripting (XSS) vulnerability caused by improper validation of user-supplied input supplied with a form POST request. A remote attacker could exploit this vulnerability using a specially-crafted URL to execute script in a victim's web browser within the security context of the hosting web site and/or steal the victim's cookie-based authentication credentials.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27546">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>31fe038bdeb54ddb981d7f6974fd9106</td>
-       <td>CVE-2022-36200</td>
-       <td>2022-08-29 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>In FiberHome VDSL2 Modem HG150-Ub_V3.0, Credentials of Admin are submitted in URL, which can be logged/sniffed.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36200">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e5b0096d9d107d5745d01c8bf1ddfdbd</td>
-       <td>CVE-2022-35962</td>
-       <td>2022-08-29 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>Zulip is an open source team chat and Zulip Mobile is an app for iOS and Andriod users. In Zulip Mobile through version 27.189, a crafted link in a message sent by an authenticated user could lead to credential disclosure if a user follows the link. A patch was released in version 27.190.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35962">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3573c168b5ceaaecbfd9d3c5b0106243</td>
-       <td>CVE-2022-31677</td>
-       <td>2022-08-29 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>An Insufficient Session Expiration issue was discovered in the Pinniped Supervisor (before v0.19.0). A user authenticating to Kubernetes clusters via the Pinniped Supervisor could potentially use their access token to continue their session beyond what proper use of their refresh token might allow.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31677">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d485c5671b6108e4ebbc32ec5dd29406</td>
-       <td>CVE-2022-2961</td>
-       <td>2022-08-29 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>A use-after-free flaw was found in the Linux kernel’s PLP Rose functionality in the way a user triggers a race condition by calling bind while simultaneously triggering the rose_bind() function. This flaw allows a local user to crash or potentially escalate their privileges on the system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2961">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>344d35d5020d0263b1640d15fd11e09d</td>
-       <td>CVE-2022-2953</td>
-       <td>2022-08-29 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>LibTIFF 4.4.0 has an out-of-bounds read in extractImageSection in tools/tiffcrop.c:6905, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit 48d6ece8.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2953">详情</a></td>
       </tr>
 
      </tbody>
