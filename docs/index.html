@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-09-21 19:30:17 -->
+<!-- RELEASE TIME : 2022-09-21 20:35:00 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d83294b1b3b432629e979d88f486802b</td>
+       <td>CVE-2022-40219</td>
+       <td>2022-09-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross-Site Request Forgery (CSRF) vulnerability in SedLex FavIcon Switcher plugin <= 1.2.11 at WordPress allows plugin settings change.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40219">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9858b25d859a9dd7ad7bb656d60f644f</td>
+       <td>CVE-2022-35621</td>
+       <td>2022-09-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Access control vulnerability in Evoh NFT EvohClaimable contract with sha256 hash code fa2084d5abca91a62ed1d2f1cad3ec318e6a9a2d7f1510a00d898737b05f48ae allows remote attackers to execute fraudulent NFT transfers.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35621">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c0f9e81336e4b826754c5f335f3f05db</td>
+       <td>CVE-2022-3252</td>
+       <td>2022-09-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper detection of complete HTTP body decompression SwiftNIO Extras provides a pair of helpers for transparently decompressing received HTTP request or response bodies. These two objects (HTTPRequestDecompressor and HTTPResponseDecompressor) both failed to detect when the decompressed body was considered complete. If trailing junk data was appended to the HTTP message body, the code would repeatedly attempt to decompress this data and fail. This would lead to an infinite loop making no forward progress, leading to livelock of the system and denial-of-service. This issue can be triggered by any attacker capable of sending a compressed HTTP message. Most commonly this is HTTP servers, as compressed HTTP messages cannot be negotiated for HTTP requests, but it is possible that users have configured decompression for HTTP requests as well. The attack is low effort, and likely to be reached without requiring any privilege or system access. The impact on availability is high: the process immediately becomes unavailable but does not immediately crash, meaning that it is possible for the process to remain in this state until an administrator intervenes or an automated circuit breaker fires. If left unchecked this issue will very slowly exhaust memory resources due to repeated buffer allocation, but the buffers are not written to and so it is possible that the processes will not terminate for quite some time. This risk can be mitigated by removing transparent HTTP message decompression. The issue is fixed by correctly detecting the termination of the compressed body as reported by zlib and refusing to decompress further data. The issue was found by Vojtech Rylko (https://github.com/vojtarylko) and reported publicly on GitHub.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3252">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8ddc0fb14c6348d9ce7833766da4a4f1</td>
+       <td>CVE-2022-29800</td>
+       <td>2022-09-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A time-of-check-time-of-use (TOCTOU) race condition vulnerability was found in networkd-dispatcher. This flaw exists because there is a certain time between the scripts being discovered and them being run. An attacker can abuse this vulnerability to replace scripts that networkd-dispatcher believes to be owned by root with ones that are not.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29800">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a6d9a2e55612c29c3f3ef01198c52c9c</td>
+       <td>CVE-2022-29799</td>
+       <td>2022-09-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in networkd-dispatcher. This flaw exists because no functions are sanitized by the OperationalState or the AdministrativeState of networkd-dispatcher. This attack leads to a directory traversal to escape from the “/etc/networkd-dispatcher” base directory.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29799">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e2be7d6466ebfd5d2b89ac07663a2e47</td>
+       <td>CVE-2022-23952</td>
+       <td>2022-09-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Keylime before 6.3.0, current keylime installer installs the keylime.conf file, which can contain sensitive data, as world-readable.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23952">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6ac773289835d253237b74e350f5af7c</td>
+       <td>CVE-2022-23951</td>
+       <td>2022-09-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Keylime before 6.3.0, quote responses from the agent can contain possibly untrusted ZIP data which can lead to zip bombs.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23951">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>823a004948ade6b08f4d16b423291233</td>
+       <td>CVE-2022-23950</td>
+       <td>2022-09-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Keylime before 6.3.0, Revocation Notifier uses a fixed /tmp path for UNIX domain socket which can allow unprivileged users a method to prohibit keylime operations.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23950">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c82eca28444cfd5cc5536768e9d810d7</td>
+       <td>CVE-2022-23949</td>
+       <td>2022-09-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Keylime before 6.3.0, unsanitized UUIDs can be passed by a rogue agent and can lead to log spoofing on the verifier and registrar.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23949">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>012da364ca1429c6624d48fb1f8252f4</td>
+       <td>CVE-2022-23948</td>
+       <td>2022-09-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A flaw was found in Keylime before 6.3.0. The logic in the Keylime agent for checking for a secure mount can be fooled by previously created unprivileged mounts allowing secrets to be leaked to other processes on the host.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23948">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ec8cd2c4b57851a08985b815b8fc605f</td>
        <td>CVE-2022-40616</td>
        <td>2022-09-21 17:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-09-21 11:15:00 <img src="imgs/new.gif" /></td>
        <td>By spoofing the target resolver with responses that have a malformed ECDSA signature, an attacker can trigger a small memory leak. It is possible to gradually erode available memory to the point where named crashes for lack of resources.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38177">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ffba7f6bf7b811be18fad58a29a6aa16</td>
-       <td>CVE-2022-3080</td>
-       <td>2022-09-21 11:15:00 <img src="imgs/new.gif" /></td>
-       <td>By sending specific queries to the resolver, an attacker can cause named to crash.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3080">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>62f365411ad904658ac9bf7886e856e2</td>
-       <td>CVE-2022-2906</td>
-       <td>2022-09-21 11:15:00 <img src="imgs/new.gif" /></td>
-       <td>An attacker can leverage this flaw to gradually erode available memory to the point where named crashes for lack of resources. Upon restart the attacker would have to begin again, but nevertheless there is the potential to deny service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2906">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9c0e564d20232768b5255e55cfa945a2</td>
-       <td>CVE-2022-2881</td>
-       <td>2022-09-21 11:15:00 <img src="imgs/new.gif" /></td>
-       <td>The underlying bug might cause read past end of the buffer and either read memory it should not read, or crash the process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2881">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4b938b214f3dfcee2dfc3ca82150aede</td>
-       <td>CVE-2022-2795</td>
-       <td>2022-09-21 11:15:00 <img src="imgs/new.gif" /></td>
-       <td>By flooding the target resolver with queries exploiting this flaw an attacker can significantly impair the resolver's performance, effectively denying legitimate clients access to the DNS resolution service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2795">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>619ade04ee0e3db1f8d32820a84cd397</td>
-       <td>CVE-2022-2872</td>
-       <td>2022-09-21 10:15:00 <img src="imgs/new.gif" /></td>
-       <td>Unrestricted Upload of File with Dangerous Type in GitHub repository octoprint/octoprint prior to 1.8.3.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2872">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2bc5fe8e361969d516edcf48ddb8117d</td>
-       <td>CVE-2022-0495</td>
-       <td>2022-09-21 09:15:00 <img src="imgs/new.gif" /></td>
-       <td>The library automation system product KOHA developed by Parantez Teknoloji before version 19.05.03 has an unauthenticated SQL Injection vulnerability. This has been fixed in the version 19.05.03.01.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-0495">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c47590bbf19dc2dfcf2d4bd46378d873</td>
-       <td>CVE-2022-41222</td>
-       <td>2022-09-21 08:15:00 <img src="imgs/new.gif" /></td>
-       <td>mm/mremap.c in the Linux kernel before 5.13.3 has a use-after-free via a stale TLB because an rmap lock is not held during a PUD move.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41222">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>445073369865c324c9cd12778fd39e03</td>
-       <td>CVE-2022-40754</td>
-       <td>2022-09-21 08:15:00 <img src="imgs/new.gif" /></td>
-       <td>In Apache Airflow 2.3.0 through 2.3.4, there was an open redirect in the webserver's `/confirm` endpoint.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40754">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5021b43f5873de9c2bd384e53e359b1b</td>
-       <td>CVE-2022-40604</td>
-       <td>2022-09-21 08:15:00 <img src="imgs/new.gif" /></td>
-       <td>In Apache Airflow 2.3.0 through 2.3.4, part of a url was unnecessarily formatted, allowing for possible information extraction.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40604">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b57bbfeaa3d4419ed0a1532df19f102e</td>
-       <td>CVE-2022-2315</td>
-       <td>2022-09-21 08:15:00 <img src="imgs/new.gif" /></td>
-       <td>Database Software Accreditation Tracking/Presentation Module product before version 2 has an unauthenticated SQL Injection vulnerability. This is fixed in version 2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2315">详情</a></td>
       </tr>
 
      </tbody>
@@ -2196,6 +2196,70 @@
       </tr>
 
       <tr>
+       <td>c6a42c89119703e8320e4089ba6b88d8</td>
+       <td>CVE-2022-35998</td>
+       <td>2022-09-16 23:15:10 </td>
+       <td>TensorFlow is an open source platform for machine learning. If `EmptyTensorList` receives an input `element_shape` with more than one dimension, it gives a `CHECK` fail that can be used to trigger a denial of service attack. We have patched the issue in GitHub commit c8ba76d48567aed347508e0552a257641931024d. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35998">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6d5f2af3065ce9c13393b99d649b7bc1</td>
+       <td>CVE-2022-35997</td>
+       <td>2022-09-16 23:15:10 </td>
+       <td>TensorFlow is an open source platform for machine learning. If `tf.sparse.cross` receives an input `separator` that is not a scalar, it gives a `CHECK` fail that can be used to trigger a denial of service attack. We have patched the issue in GitHub commit 83dcb4dbfa094e33db084e97c4d0531a559e0ebf. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35997">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7710deb21be3182ccc38bd86fbd77938</td>
+       <td>CVE-2022-35996</td>
+       <td>2022-09-16 23:15:10 </td>
+       <td>TensorFlow is an open source platform for machine learning. If `Conv2D` is given empty `input` and the `filter` and `padding` sizes are valid, the output is all-zeros. This causes division-by-zero floating point exceptions that can be used to trigger a denial of service attack. We have patched the issue in GitHub commit 611d80db29dd7b0cfb755772c69d60ae5bca05f9. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35996">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>70aa42a00f61d3bb44d0967ba1d7a1dc</td>
+       <td>CVE-2022-35995</td>
+       <td>2022-09-16 23:15:10 </td>
+       <td>TensorFlow is an open source platform for machine learning. When `AudioSummaryV2` receives an input `sample_rate` with more than one element, it gives a `CHECK` fails that can be used to trigger a denial of service attack. We have patched the issue in GitHub commit bf6b45244992e2ee543c258e519489659c99fb7f. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35995">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0575536e87c28d6ba7a78063f021e6ea</td>
+       <td>CVE-2022-35994</td>
+       <td>2022-09-16 23:15:10 </td>
+       <td>TensorFlow is an open source platform for machine learning. When `CollectiveGather` receives an scalar input `input`, it gives a `CHECK` fails that can be used to trigger a denial of service attack. We have patched the issue in GitHub commit c1f491817dec39a26be3c574e86a88c30f3c4770. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35994">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>56ac560b6e2b0e780c839c2cee25bd17</td>
+       <td>CVE-2022-35993</td>
+       <td>2022-09-16 23:15:10 </td>
+       <td>TensorFlow is an open source platform for machine learning. When `SetSize` receives an input `set_shape` that is not a 1D tensor, it gives a `CHECK` fails that can be used to trigger a denial of service attack. We have patched the issue in GitHub commit cf70b79d2662c0d3c6af74583641e345fc939467. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35993">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3f4e547e7d6add08b6efe63c9325a797</td>
+       <td>CVE-2022-35992</td>
+       <td>2022-09-16 23:15:10 </td>
+       <td>TensorFlow is an open source platform for machine learning. When `TensorListFromTensor` receives an `element_shape` of a rank greater than one, it gives a `CHECK` fail that can trigger a denial of service attack. We have patched the issue in GitHub commit 3db59a042a38f4338aa207922fa2f476e000a6ee. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35992">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f0704390deb0099283afeba51fb2f184</td>
+       <td>CVE-2022-35991</td>
+       <td>2022-09-16 23:15:10 </td>
+       <td>TensorFlow is an open source platform for machine learning. When `TensorListScatter` and `TensorListScatterV2` receive an `element_shape` of a rank greater than one, they give a `CHECK` fail that can trigger a denial of service attack. We have patched the issue in GitHub commit bb03fdf4aae944ab2e4b35c7daa051068a8b7f61. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35991">详情</a></td>
+      </tr>
+
+      <tr>
        <td>eead98618602ec249102d4d6ffddcf97</td>
        <td>CVE-2022-37258</td>
        <td>2022-09-16 22:15:12 </td>
@@ -2209,6 +2273,22 @@
        <td>2022-09-16 22:15:12 </td>
        <td>Craft CMS 4.2.0.1 is vulnerable to Cross Site Scripting (XSS) via Drafts.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37251">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>caf69e36eaee8ef4e36c81edd92aa792</td>
+       <td>CVE-2022-35990</td>
+       <td>2022-09-16 22:15:11 </td>
+       <td>TensorFlow is an open source platform for machine learning. When `tf.quantization.fake_quant_with_min_max_vars_per_channel_gradient` receives input `min` or `max` of rank other than 1, it gives a `CHECK` fail that can trigger a denial of service attack. We have patched the issue in GitHub commit f3cf67ac5705f4f04721d15e485e192bb319feed. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range.There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35990">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fd50021bee9294ed9ced3154a7c60b9a</td>
+       <td>CVE-2022-35989</td>
+       <td>2022-09-16 22:15:11 </td>
+       <td>TensorFlow is an open source platform for machine learning. When `MaxPool` receives a window size input array `ksize` with dimensions greater than its input tensor `input`, the GPU kernel gives a `CHECK` fail that can be used to trigger a denial of service attack. We have patched the issue in GitHub commit 32d7bd3defd134f21a4e344c8dfd40099aaf6b18. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35989">详情</a></td>
       </tr>
 
       <tr>
@@ -2345,86 +2425,6 @@
        <td>2022-09-16 18:15:16 </td>
        <td>Adobe InDesign versions 16.4.2 (and earlier) and 17.3 (and earlier) are affected by an out-of-bounds read vulnerability when parsing a crafted file, which could result in a read past the end of an allocated memory structure. An attacker could leverage this vulnerability to execute code in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38416">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4ab80493a5deec2102b99f4824ff5308</td>
-       <td>CVE-2022-38413</td>
-       <td>2022-09-16 18:15:16 </td>
-       <td>Adobe InDesign versions 16.4.2 (and earlier) and 17.3 (and earlier) are affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38413">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e58d43ef7e83dbef43410b8d3419ad88</td>
-       <td>CVE-2022-38407</td>
-       <td>2022-09-16 18:15:16 </td>
-       <td>Adobe InCopy version 17.3 (and earlier) and 16.4.2 (and earlier) are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38407">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ef779cbaeee6e913ef655b10687d9c12</td>
-       <td>CVE-2022-38406</td>
-       <td>2022-09-16 18:15:16 </td>
-       <td>Adobe InCopy version 17.3 (and earlier) and 16.4.2 (and earlier) are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38406">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ced353343532f4d7bf04ad5ddce9ed98</td>
-       <td>CVE-2022-38405</td>
-       <td>2022-09-16 18:15:16 </td>
-       <td>Adobe InCopy version 17.3 (and earlier) and 16.4.2 (and earlier) are affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38405">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1f848763a2c97eed70ee4961fe2be3dd</td>
-       <td>CVE-2022-38404</td>
-       <td>2022-09-16 18:15:15 </td>
-       <td>Adobe InCopy version 17.3 (and earlier) and 16.4.2 (and earlier) are affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38404">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>22efe66cd897f36e1473e2eb3fe71082</td>
-       <td>CVE-2022-38412</td>
-       <td>2022-09-16 17:15:13 </td>
-       <td>Adobe Animate version 21.0.11 (and earlier) and 22.0.7 (and earlier) are affected by an out-of-bounds read vulnerability when parsing a crafted file, which could result in a read past the end of an allocated memory structure. An attacker could leverage this vulnerability to execute code in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38412">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cddb213f49dc0b9fbd82a78eaa04ddfb</td>
-       <td>CVE-2022-37775</td>
-       <td>2022-09-16 17:15:12 </td>
-       <td>Genesys PureConnect Interaction Web Tools Chat Service (up to at least 26- September- 2019) allows XSS within the Printable Chat History via the participant -&gt; name JSON POST parameter.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37775">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>27d1fc2657578478a3efc61aa610e43b</td>
-       <td>CVE-2022-38411</td>
-       <td>2022-09-16 17:15:12 </td>
-       <td>Adobe Animate version 21.0.11 (and earlier) and 22.0.7 (and earlier) are affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38411">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>34012f9c1786d2d80b9ea586a25f36f2</td>
-       <td>CVE-2022-38410</td>
-       <td>2022-09-16 17:15:12 </td>
-       <td>Adobe Illustrator versions 26.4 (and earlier) and 25.4.7 (and earlier) are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38410">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>22377d3bec3eb7ee44832b27aa161f41</td>
-       <td>CVE-2022-38409</td>
-       <td>2022-09-16 17:15:12 </td>
-       <td>Adobe Illustrator versions 26.4 (and earlier) and 25.4.7 (and earlier) are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38409">详情</a></td>
       </tr>
 
      </tbody>
