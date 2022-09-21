@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-09-21 13:07:09 -->
+<!-- RELEASE TIME : 2022-09-21 14:04:58 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,62 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>5f561c541596f0d87cfab5f606faf8f4</td>
+       <td>CVE-2022-38178</td>
+       <td>2022-09-21 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>By spoofing the target resolver with responses that have a malformed EdDSA signature, an attacker can trigger a small memory leak. It is possible to gradually erode available memory to the point where named crashes for lack of resources.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38178">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4df48f4ae5ce61f11bdb941b5c5bad4b</td>
+       <td>CVE-2022-38177</td>
+       <td>2022-09-21 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>By spoofing the target resolver with responses that have a malformed ECDSA signature, an attacker can trigger a small memory leak. It is possible to gradually erode available memory to the point where named crashes for lack of resources.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38177">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ffba7f6bf7b811be18fad58a29a6aa16</td>
+       <td>CVE-2022-3080</td>
+       <td>2022-09-21 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>By sending specific queries to the resolver, an attacker can cause named to crash.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3080">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>62f365411ad904658ac9bf7886e856e2</td>
+       <td>CVE-2022-2906</td>
+       <td>2022-09-21 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>An attacker can leverage this flaw to gradually erode available memory to the point where named crashes for lack of resources. Upon restart the attacker would have to begin again, but nevertheless there is the potential to deny service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2906">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9c0e564d20232768b5255e55cfa945a2</td>
+       <td>CVE-2022-2881</td>
+       <td>2022-09-21 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>The underlying bug might cause read past end of the buffer and either read memory it should not read, or crash the process.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2881">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4b938b214f3dfcee2dfc3ca82150aede</td>
+       <td>CVE-2022-2795</td>
+       <td>2022-09-21 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>By flooding the target resolver with queries exploiting this flaw an attacker can significantly impair the resolver's performance, effectively denying legitimate clients access to the DNS resolution service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2795">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>619ade04ee0e3db1f8d32820a84cd397</td>
+       <td>CVE-2022-2872</td>
+       <td>2022-09-21 10:15:00 <img src="imgs/new.gif" /></td>
+       <td>Unrestricted Upload of File with Dangerous Type in GitHub repository octoprint/octoprint prior to 1.8.3.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2872">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2bc5fe8e361969d516edcf48ddb8117d</td>
        <td>CVE-2022-0495</td>
        <td>2022-09-21 09:15:00 <img src="imgs/new.gif" /></td>
@@ -465,62 +521,6 @@
        <td>2022-09-20 21:15:00 <img src="imgs/new.gif" /></td>
        <td>A buffer overflow issue was addressed with improved memory handling. This issue is fixed in Safari 16, iOS 16, iOS 15.7 and iPadOS 15.7. Processing maliciously crafted web content may lead to arbitrary code execution.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32886">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>636f0ce70e9beeec31d83281c8647dd4</td>
-       <td>CVE-2022-32883</td>
-       <td>2022-09-20 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>A logic issue was addressed with improved restrictions. This issue is fixed in macOS Monterey 12.6, iOS 15.7 and iPadOS 15.7, iOS 16, macOS Big Sur 11.7. An app may be able to read sensitive location information.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32883">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>78804996fc78449772c3c06515c330a9</td>
-       <td>CVE-2022-32882</td>
-       <td>2022-09-20 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>This issue was addressed with improved checks. This issue is fixed in macOS Monterey 12.4, macOS Big Sur 11.6.6. An app may be able to bypass Privacy preferences.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32882">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>41c39b96f6ee618f2d66221fff91ebcf</td>
-       <td>CVE-2022-38916</td>
-       <td>2022-09-20 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>A file upload vulnerability exists in the storage feature of pagekit 1.0.18, which allows an attacker to upload malicious files</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38916">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>df040c9aa167082609a85249e1917212</td>
-       <td>CVE-2022-37204</td>
-       <td>2022-09-20 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Final CMS 5.1.0 is vulnerable to SQL Injection.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37204">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>51d3bf3001b2ea49afd6aac040076702</td>
-       <td>CVE-2022-35196</td>
-       <td>2022-09-20 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>TestLink v1.9.20 was discovered to contain a Cross-Site Request Forgery (CSRF) via /lib/plan/planView.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35196">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2bd4deb28f273b5140a570e48e3129f6</td>
-       <td>CVE-2022-32167</td>
-       <td>2022-09-20 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cloudreve versions v1.0.0 through v3.5.3 are vulnerable to Stored Cross-Site Scripting (XSS), via the file upload functionality. A low privileged user will be able to share a file with an admin user, which could lead to privilege escalation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32167">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cdf605ab54599e1ffbdb3745af7b1b76</td>
-       <td>CVE-2021-33081</td>
-       <td>2022-09-20 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>Protection mechanism failure in firmware for some Intel(R) SSD DC Products may allow a privileged user to potentially enable information disclosure via local access.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-33081">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,30 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>50b9c5360e2c727870df263c47cc3777</td>
+       <td>CVE-2022-38978</td>
+       <td>2022-09-21 20:20:57 <img src="imgs/new.gif" /></td>
+       <td>Huawei HarmonyOS 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ff5ffe9033c6417fb5880ceb68fc3436">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>56a407513b3efba36a6747578252fbc8</td>
+       <td>CVE-2022-38988</td>
+       <td>2022-09-21 20:20:46 <img src="imgs/new.gif" /></td>
+       <td>Huawei HarmonyOS 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=762b45fa980a424089a8bcf01904f9c1">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>950135150f9d13f154fd48242acb3451</td>
+       <td>CVE-2022-38994</td>
+       <td>2022-09-21 20:20:25 <img src="imgs/new.gif" /></td>
+       <td>Huawei HarmonyOS 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0671f04b30414a1fbf0d8d248ca67c12">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c5adfbd3ce724901e99424b597cf2296</td>
        <td>CVE-2022-35193</td>
        <td>2022-09-20 20:18:37 <img src="imgs/new.gif" /></td>
@@ -1889,30 +1913,6 @@
        <td>2022-09-17 20:25:54</td>
        <td>Siemens Parasolid 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=97cfd535f78e4f6e9fbee288dc7d2ce8">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9b2264f194748a5b9ce03529315967bd</td>
-       <td>CVE-2022-39142</td>
-       <td>2022-09-17 20:25:39</td>
-       <td>Siemens Parasolid 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b0310b713b22415ebd469047e76755ca">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>28ab4badd3c0b4bf534e970f30229e25</td>
-       <td>CVE-2022-39143</td>
-       <td>2022-09-17 20:25:34</td>
-       <td>Siemens Parasolid 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4a4bdcb2d8864c939c8cb5994b149cbd">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>73dd97262395ddd2b018e2841794fc67</td>
-       <td>CVE-2022-39138</td>
-       <td>2022-09-16 20:15:24</td>
-       <td>Siemens Parasolid 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d47ecda2740c45508adb9862413c4a93">详情</a></td>
       </tr>
 
      </tbody>
