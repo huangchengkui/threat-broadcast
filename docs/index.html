@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-09-20 20:35:33 -->
+<!-- RELEASE TIME : 2022-09-21 06:21:28 -->
 <html lang="zh-cn">
 
  <head>
@@ -30,7 +30,7 @@
       <tr>
        <td>351182e40e721da051592124ed22cdb2</td>
        <td></td>
-       <td>2022-09-19 06:45:10 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 06:45:10</td>
        <td>安全事件周报 (09.13-09.18)</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=3c07829427423f594b6091fe59b664c3">详情</a></td>
       </tr>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6aa8f6000a6b9e70679accb19d7e827b</td>
+       <td>CVE-2022-35957</td>
+       <td>2022-09-20 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Grafana is an open-source platform for monitoring and observability. Versions prior to 9.1.6 and 8.5.13 are vulnerable to an escalation from admin to server admin when auth proxy is used, allowing an admin to take over the server admin account and gain full control of the grafana instance. All installations should be upgraded as soon as possible. As a workaround deactivate auth proxy following the instructions at: https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/auth-proxy/</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35957">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e0b219081ffcd42433a1650459b29970</td>
+       <td>CVE-2022-39220</td>
+       <td>2022-09-20 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>SFTPGo is an SFTP server written in Go. Versions prior to 2.3.5 are subject to Cross-site scripting (XSS) vulnerabilities in the SFTPGo WebClient, allowing remote attackers to inject malicious code. This issue is patched in version 2.3.5. No known workarounds exist.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39220">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>66f01219d7ad60008f28ba23db899cd9</td>
+       <td>CVE-2022-40357</td>
+       <td>2022-09-20 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A security issue was discovered in Z-BlogPHP <= 1.7.2. A Server-Side Request Forgery (SSRF) vulnerability in the zb_users/plugin/UEditor/php/action_crawler.php file allows remote attackers to force the application to make arbitrary requests via injection of arbitrary URLs into the source parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40357">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3836975f644cb7e73d9ed7e68645457e</td>
+       <td>CVE-2022-32917</td>
+       <td>2022-09-20 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The issue was addressed with improved bounds checks. This issue is fixed in macOS Monterey 12.6, iOS 15.7 and iPadOS 15.7, iOS 16, macOS Big Sur 11.7. An application may be able to execute arbitrary code with kernel privileges. Apple is aware of a report that this issue may have been actively exploited..</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32917">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d77e797c28d501832335de953bcea4d5</td>
+       <td>CVE-2022-32912</td>
+       <td>2022-09-20 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in Safari 16, iOS 16, iOS 15.7 and iPadOS 15.7. Processing maliciously crafted web content may lead to arbitrary code execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32912">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ce0b65f5ca3a7b6be12d12b8fe5c9dbb</td>
+       <td>CVE-2022-32911</td>
+       <td>2022-09-20 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The issue was addressed with improved memory handling. This issue is fixed in macOS Monterey 12.6, iOS 15.7 and iPadOS 15.7, iOS 16, macOS Big Sur 11.7. An app may be able to execute arbitrary code with kernel privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32911">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1b3f69b5f893ee447e47aa867f9408f5</td>
+       <td>CVE-2022-32908</td>
+       <td>2022-09-20 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A memory corruption issue was addressed with improved input validation. This issue is fixed in macOS Monterey 12.6, iOS 15.7 and iPadOS 15.7, iOS 16, macOS Big Sur 11.7. A user may be able to elevate privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32908">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1e0ad86bee6f5a843ae64ce51ecafaaa</td>
+       <td>CVE-2022-32886</td>
+       <td>2022-09-20 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A buffer overflow issue was addressed with improved memory handling. This issue is fixed in Safari 16, iOS 16, iOS 15.7 and iPadOS 15.7. Processing maliciously crafted web content may lead to arbitrary code execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32886">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>636f0ce70e9beeec31d83281c8647dd4</td>
+       <td>CVE-2022-32883</td>
+       <td>2022-09-20 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A logic issue was addressed with improved restrictions. This issue is fixed in macOS Monterey 12.6, iOS 15.7 and iPadOS 15.7, iOS 16, macOS Big Sur 11.7. An app may be able to read sensitive location information.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32883">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>78804996fc78449772c3c06515c330a9</td>
+       <td>CVE-2022-32882</td>
+       <td>2022-09-20 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>This issue was addressed with improved checks. This issue is fixed in macOS Monterey 12.4, macOS Big Sur 11.6.6. An app may be able to bypass Privacy preferences.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32882">详情</a></td>
+      </tr>
+
+      <tr>
        <td>41c39b96f6ee618f2d66221fff91ebcf</td>
        <td>CVE-2022-38916</td>
        <td>2022-09-20 17:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-09-20 07:15:00 <img src="imgs/new.gif" /></td>
        <td>Cross-site Scripting (XSS) - Stored in GitHub repository yetiforcecompany/yetiforcecrm prior to 6.4.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3000">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2af7f57d066251f189cd9363755057f9</td>
-       <td>CVE-2022-2924</td>
-       <td>2022-09-20 06:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cross-site Scripting (XSS) - Stored in GitHub repository yetiforcecompany/yetiforcecrm prior to 6.3.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2924">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dd0da1514677f77aa3d418aa15bdd5c5</td>
-       <td>CVE-2022-34746</td>
-       <td>2022-09-20 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>An insufficient entropy vulnerability caused by the improper use of randomness sources with low entropy for RSA key pair generation was found in Zyxel GS1900 series firmware versions prior to V2.70. This vulnerability could allow an unauthenticated attacker to retrieve a private key by factoring the RSA modulus N in the certificate of the web administration interface.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34746">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dec64c9293620b79b9f2e7ab43204ffa</td>
-       <td>CVE-2022-38550</td>
-       <td>2022-09-19 23:15:00 <img src="imgs/new.gif" /></td>
-       <td>A stored cross-site scripting (XSS) vulnerability in the /weibo/list component of Jeesns v2.0.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38550">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aa6bcaf4719c2553f0bbf4bb340e593a</td>
-       <td>CVE-2022-38545</td>
-       <td>2022-09-19 23:15:00 <img src="imgs/new.gif" /></td>
-       <td>Valine v1.4.18 was discovered to contain a remote code execution (RCE) vulnerability which allows attackers to execute arbitrary code via a crafted POST request.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38545">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>02fa7be3d5ef6113d91324a8a8fd2d07</td>
-       <td>CVE-2022-38532</td>
-       <td>2022-09-19 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>Micro-Star International Co., Ltd MSI Center 1.0.50.0 was discovered to contain a vulnerability in the component C_Features of MSI.CentralServer.exe. This vulnerability allows attackers to escalate privileges via running a crafted executable.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38532">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>27697a1ee51474c5433cd6c1a4c8ae27</td>
-       <td>CVE-2022-38527</td>
-       <td>2022-09-19 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>UCMS v1.6.0 was discovered to contain a cross-site scripting (XSS) vulnerability via the Import function under the Site Management page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38527">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>633ff5163baf405902761bc0fac106fb</td>
-       <td>CVE-2022-38509</td>
-       <td>2022-09-19 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>Wedding Planner v1.0 was discovered to contain a SQL injection vulnerability via the booking_id parameter at /admin/budget.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38509">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cde8a0ed164d06184fd8dd0b58ee00c1</td>
-       <td>CVE-2022-38339</td>
-       <td>2022-09-19 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>Safe Software FME Server v2022.0.1.1 and below contains a cross-site scripting (XSS) vulnerability which allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the login page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38339">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e48c6a5ec31184eb06536e01a686b569</td>
-       <td>CVE-2022-37032</td>
-       <td>2022-09-19 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>An out-of-bounds read in the BGP daemon of FRRouting FRR before 8.4 may lead to a segmentation fault and denial of service. This occurs in bgp_capability_msg_parse in bgpd/bgp_packet.c.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37032">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>13f20e8dca36b8697448219cdea09566</td>
-       <td>CVE-2022-35070</td>
-       <td>2022-09-19 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>OTFCC commit 617837b was discovered to contain a heap buffer overflow via /release-x64/otfccdump+0x65fc97.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35070">详情</a></td>
       </tr>
 
      </tbody>
@@ -798,7 +798,7 @@
       <tr>
        <td>8f27f771101e2a03aee0913d24d6b2f8</td>
        <td>CNNVD-202209-1536 (CVE-2022-35062)</td>
-       <td>2022-09-19 13:03:33 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 13:03:33</td>
        <td>OTFCC 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-1536">详情</a></td>
       </tr>
@@ -806,7 +806,7 @@
       <tr>
        <td>a201fe8efeea1b9f4009bc443b1c325b</td>
        <td>CNNVD-202209-1537 (CVE-2022-35066)</td>
-       <td>2022-09-19 13:03:30 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 13:03:30</td>
        <td>OTFCC 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-1537">详情</a></td>
       </tr>
@@ -814,7 +814,7 @@
       <tr>
        <td>4dd2ecb2337da1f0c58e458b4639d06a</td>
        <td>CNNVD-202209-1538 (CVE-2022-35069)</td>
-       <td>2022-09-19 13:03:28 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 13:03:28</td>
        <td>OTFCC 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-1538">详情</a></td>
       </tr>
@@ -822,7 +822,7 @@
       <tr>
        <td>3028b1066fba579380e898379f1e637d</td>
        <td>CNNVD-202209-1539 (CVE-2022-35070)</td>
-       <td>2022-09-19 13:03:25 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 13:03:25</td>
        <td>OTFCC 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-1539">详情</a></td>
       </tr>
@@ -830,7 +830,7 @@
       <tr>
        <td>2d0b2b7343fe4043e10eba885c042112</td>
        <td>CNNVD-202209-1540 (CVE-2022-38339)</td>
-       <td>2022-09-19 13:03:23 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 13:03:23</td>
        <td>Safe Software FME Server 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-1540">详情</a></td>
       </tr>
@@ -838,7 +838,7 @@
       <tr>
        <td>376c41b13e41c9eed1d7dc3250e091e9</td>
        <td>CNNVD-202209-1541 (CVE-2022-38532)</td>
-       <td>2022-09-19 13:03:20 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 13:03:20</td>
        <td>Micro-Star International MSI Center 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-1541">详情</a></td>
       </tr>
@@ -846,7 +846,7 @@
       <tr>
        <td>b7b54de3df805fb34d1ceb4f6069948c</td>
        <td>CNNVD-202209-1542 (CVE-2022-38545)</td>
-       <td>2022-09-19 13:03:16 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 13:03:16</td>
        <td>Valine 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-1542">详情</a></td>
       </tr>
@@ -854,7 +854,7 @@
       <tr>
        <td>11163d36df705fd62e6ee30dc116bba2</td>
        <td>CNNVD-202209-1543 (CVE-2022-38509)</td>
-       <td>2022-09-19 13:03:14 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 13:03:14</td>
        <td>Wedding Planner 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-1543">详情</a></td>
       </tr>
@@ -862,7 +862,7 @@
       <tr>
        <td>e4dbb5d7e96b1dda0b3bc4d26b292ab9</td>
        <td>CNNVD-202209-1544 (CVE-2022-38527)</td>
-       <td>2022-09-19 13:03:11 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 13:03:11</td>
        <td>UCMS 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-1544">详情</a></td>
       </tr>
@@ -870,7 +870,7 @@
       <tr>
        <td>2a916dd4a402719bcd502a7c6b3912cb</td>
        <td>CNNVD-202209-1545 (CVE-2022-38550)</td>
-       <td>2022-09-19 13:03:09 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 13:03:09</td>
        <td>JEESNS 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202209-1545">详情</a></td>
       </tr>
@@ -1726,7 +1726,7 @@
       <tr>
        <td>899bab4ea95cfbc1288ac2b279bdffb8</td>
        <td>CVE-2021-42948</td>
-       <td>2022-09-19 20:15:17 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 20:15:17</td>
        <td>DIGITALDRUID HOTELDRUID Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3bdbe6d041bc4626a84e6e3cf8b3a43c">详情</a></td>
       </tr>
@@ -1734,7 +1734,7 @@
       <tr>
        <td>9c13cc0468be98f60c6e856dd3b56906</td>
        <td>CVE-2022-38979</td>
-       <td>2022-09-19 20:15:11 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 20:15:11</td>
        <td>Huawei HarmonyOS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b230efa6267742a78c27437b93453783">详情</a></td>
       </tr>
@@ -1742,7 +1742,7 @@
       <tr>
        <td>484bf65aea0f088a3e4e5dc6d6460254</td>
        <td>CVE-2022-38989</td>
-       <td>2022-09-19 20:15:06 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 20:15:06</td>
        <td>Huawei HarmonyOS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=968c3a9cf15a4b13befde968227699ee">详情</a></td>
       </tr>
@@ -1750,7 +1750,7 @@
       <tr>
        <td>ecd87003e4e94ab202dbe7e9dcc935b6</td>
        <td>CVE-2022-35193</td>
-       <td>2022-09-19 20:15:01 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 20:15:01</td>
        <td>TESTLINK TESTLINK Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5fd6c9df385540b584c33f3b838c43fc">详情</a></td>
       </tr>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>1d548859651f604d21c5d0b44c7a9fdd</td>
        <td>CVE-2022-38993</td>
-       <td>2022-09-19 20:14:56 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 20:14:56</td>
        <td>Huawei HarmonyOS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9c88eb28b59e4a7082437640bd809050">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>2dda007351710143901666353778e0a0</td>
        <td>CVE-2022-38987</td>
-       <td>2022-09-19 20:14:51 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 20:14:51</td>
        <td>Huawei HarmonyOS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3a54201ac88e43569fba0fedce05f35f">详情</a></td>
       </tr>
@@ -1774,7 +1774,7 @@
       <tr>
        <td>7d45ef424aa812ca966ca526388145c8</td>
        <td>CVE-2022-38996</td>
-       <td>2022-09-19 20:14:46 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 20:14:46</td>
        <td>Huawei HarmonyOS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f15ce275a1b344b2b5e969c8183a184f">详情</a></td>
       </tr>
@@ -1782,7 +1782,7 @@
       <tr>
        <td>5a28f7483bf18a40485c9d8c026fc413</td>
        <td>CVE-2022-38990</td>
-       <td>2022-09-19 20:14:40 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 20:14:40</td>
        <td>Huawei HarmonyOS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=77f3449a07554d409a303983d40f490c">详情</a></td>
       </tr>
@@ -1790,7 +1790,7 @@
       <tr>
        <td>a4d1b2630b955a93637bb1dd4bcbd320</td>
        <td>CVE-2022-40626</td>
-       <td>2022-09-19 20:14:35 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 20:14:35</td>
        <td>ZABBIX ZABBIX Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=97329681cbb64b6fa05fe66dd9699286">详情</a></td>
       </tr>
@@ -1798,7 +1798,7 @@
       <tr>
        <td>de8ce4f0366da88d9ed6cacb338ed8bc</td>
        <td>CVE-2022-38991</td>
-       <td>2022-09-19 20:14:30 <img src="imgs/new.gif" /></td>
+       <td>2022-09-19 20:14:30</td>
        <td>Huawei HarmonyOS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c796a271613d470b84a364a00a766488">详情</a></td>
       </tr>
@@ -2252,6 +2252,14 @@
       </tr>
 
       <tr>
+       <td>220c2a3932d1f50f93e61a76a4aebb7c</td>
+       <td>CVE-2022-38978</td>
+       <td>2022-09-16 18:15:17 </td>
+       <td>The secure OS module has configuration defects. Successful exploitation of this vulnerability may affect data confidentiality.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38978">详情</a></td>
+      </tr>
+
+      <tr>
        <td>65570da866bf68ca90ecf7e1be041a98</td>
        <td>CVE-2022-38417</td>
        <td>2022-09-16 18:15:16 </td>
@@ -2273,6 +2281,22 @@
        <td>2022-09-16 17:15:12 </td>
        <td>Genesys PureConnect Interaction Web Tools Chat Service (up to at least 26- September- 2019) allows XSS within the Printable Chat History via the participant -&gt; name JSON POST parameter.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37775">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ab8231fced64261194b67a50094a112a</td>
+       <td>CVE-2022-38878</td>
+       <td>2022-09-16 16:15:10 </td>
+       <td>School Activity Updates with SMS Notification v1.0 is vulnerable to SQL Injection via /activity/admin/modules/event/index.php?view=edit&amp;id=.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38878">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2519e42b6f4297b9b01464e2f14edf18</td>
+       <td>CVE-2022-38877</td>
+       <td>2022-09-16 16:15:10 </td>
+       <td>Garage Management System v1.0 is vulnerable to Arbitrary code execution via ip/garage/php_action/editProductImage.php?id=1.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38877">详情</a></td>
       </tr>
 
       <tr>
@@ -2401,30 +2425,6 @@
        <td>2022-09-15 16:15:12 </td>
        <td>This vulnerability allows remote attackers to execute arbitrary code on affected installations of NIKON NIS-Elements Viewer 1.2100.1483.0. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of PSD images. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-15135.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40660">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3f9ab2a329e6614687554a77177ad5ba</td>
-       <td>CVE-2022-40659</td>
-       <td>2022-09-15 16:15:12 </td>
-       <td>This vulnerability allows remote attackers to execute arbitrary code on affected installations of NIKON NIS-Elements Viewer 1.2100.1483.0. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of TIF images. Crafted data in a TIF file can trigger a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-15214.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40659">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a704cb00f7fcbb7e3565794751200ba1</td>
-       <td>CVE-2022-40658</td>
-       <td>2022-09-15 16:15:12 </td>
-       <td>This vulnerability allows remote attackers to execute arbitrary code on affected installations of NIKON NIS-Elements Viewer 1.2100.1483.0. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of TIF images. Crafted data in a TIF file can trigger a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-15166.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40658">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>692db1c9d93ea8ee3bc485dede63adb4</td>
-       <td>CVE-2022-40657</td>
-       <td>2022-09-15 16:15:12 </td>
-       <td>This vulnerability allows remote attackers to execute arbitrary code on affected installations of NIKON NIS-Elements Viewer 1.2100.1483.0. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of PSD files. Crafted data in a PSD file can trigger a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-15073.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40657">详情</a></td>
       </tr>
 
      </tbody>
