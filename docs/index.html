@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-09-22 06:17:14 -->
+<!-- RELEASE TIME : 2022-09-22 07:49:25 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,22 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>b27c1e083a077d918b9a0d22b23082fd</td>
+       <td>CVE-2022-2588</td>
+       <td>2022-09-22 07:45:41 <img src="imgs/new.gif" /></td>
+       <td>CVE-2022-2588：Linux Kernel 权限提升漏洞通告</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=74307092d84a7b0e29533331e92e9824">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>eff140d3cfd0ec7da797bfd4f881f01b</td>
+       <td>CVE-2022-37972</td>
+       <td>2022-09-22 07:42:58 <img src="imgs/new.gif" /></td>
+       <td>CVE-2022-37972：Microsoft MECM信息泄露漏洞</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=d068555664d950529a7144cd64987770">详情</a></td>
+      </tr>
+
       <tr>
        <td>8f85411b528fc1ec9be489557c2acb76</td>
        <td>CVE-2022-39197</td>
@@ -251,22 +267,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=9b62a5991b4cc604b5d5409a6594e2c6">详情</a></td>
       </tr>
 
-      <tr>
-       <td>e89aa4c7b6d2ab33298297f878a719fa</td>
-       <td>CVE-2022-2185</td>
-       <td>2022-07-01 07:22:51</td>
-       <td>CVE-2022-2185：GitLab 远程代码执行漏洞</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=f55922eb29c8ed4b7bcd17770f5fe156">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0324cef1d52a3d4bb83cfb37e93cd2b9</td>
-       <td>CVE-2022-32532</td>
-       <td>2022-06-29 10:32:58</td>
-       <td>CVE-2022-32532：Apache Shiro 身份认证绕过漏洞</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=6d26a731c90dd2b8fb9efb2d4d8d73f4">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -283,6 +283,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>d24eb2a3ceb7ded29814fc99521bb181</td>
+       <td>CVE-2022-40186</td>
+       <td>2022-09-22 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in HashiCorp Vault and Vault Enterprise before 1.11.3. A vulnerability in the Identity Engine was found where, in a deployment where an entity has multiple mount accessors with shared alias names, Vault may overwrite metadata to the wrong alias due to an issue with checking the proper alias assigned to an entity. This may allow for unintended access to key/value paths using that metadata in Vault.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40186">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ffbd30cdac6cf503523b3c22c146740f</td>
+       <td>CVE-2022-39197</td>
+       <td>2022-09-22 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>An XSS (Cross Site Scripting) vulnerability was found in HelpSystems Cobalt Strike through 4.7 that allowed a remote attacker to execute HTML on the Cobalt Strike teamserver. To exploit the vulnerability, one must first inspect a Cobalt Strike payload, and then modify the username field in the payload (or create a new payload with the extracted information and then modify that username field to be malformed).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39197">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5465110fe666750f5ba7095c73cb50ce</td>
+       <td>CVE-2022-38512</td>
+       <td>2022-09-22 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Translation module in Liferay Portal v7.4.3.12 through v7.4.3.36, and Liferay DXP 7.4 update 8 through 36 does not check permissions before allowing a user to export a web content for translation, allowing attackers to download a web content page's XLIFF translation file via crafted URL.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38512">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c7bfd947f87bc3eaa6255ca522131e50</td>
+       <td>CVE-2022-28981</td>
+       <td>2022-09-22 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Path traversal vulnerability in the Hypermedia REST APIs module in Liferay Portal 7.4.0 through 7.4.2 allows remote attackers to access files outside of com.liferay.headless.discovery.web/META-INF/resources via the `parameter` parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28981">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9606eb037fe4ee7eeb0cd34f9df30e5a</td>
+       <td>CVE-2022-28980</td>
+       <td>2022-09-22 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Multiple cross-site scripting (XSS) vulnerabilities in Liferay Portal v7.4.3.4 and Liferay DXP v7.4 GA allows attackers to execute arbitrary web scripts or HTML via parameters with the filter_ prefix.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28980">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d8d6d19181c64144ffd995efb8b9f07f</td>
+       <td>CVE-2022-28977</td>
+       <td>2022-09-22 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>HtmlUtil.escapeRedirect in Liferay Portal 7.3.1 through 7.4.2, and Liferay DXP 7.0 fix pack 91 through 101, 7.1 fix pack 17 through 25, 7.2 fix pack 5 through 14, and 7.3 before service pack 3 can be circumvented by using multiple forward slashes, which allows remote attackers to redirect users to arbitrary external URLs via the (1) 'redirect` parameter (2) `FORWARD_URL` parameter, and (3) others parameters that rely on HtmlUtil.escapeRedirect.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28977">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7e6fae00653dcc72f7a3c5214febf57d</td>
+       <td>CVE-2022-39975</td>
+       <td>2022-09-22 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Layout module in Liferay Portal v7.3.3 through v7.4.3.34, and Liferay DXP 7.3 before update 10, and 7.4 before update 35 does not check user permission before showing the preview of a "Content Page" type page, allowing attackers to view unpublished "Content Page" pages via URL manipulation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39975">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>91e1942d78224333eb9845e5809c376c</td>
+       <td>CVE-2022-35896</td>
+       <td>2022-09-22 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue SMM memory leak vulnerability in SMM driver (SMRAM was discovered in Insyde InsydeH2O with kernel 5.0 through 5.5. An attacker can dump SMRAM contents via the software SMI provided by the FvbServicesRuntimeDxe driver to read the contents of SMRAM, leading to information disclosure.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35896">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7763b5e9ec4a7aee0551cca665136070</td>
+       <td>CVE-2022-28982</td>
+       <td>2022-09-22 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>A cross-site scripting (XSS) vulnerability in Liferay Portal v7.3.3 through v7.4.2 and Liferay DXP v7.3 before service pack 3 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the name of a tag.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28982">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ddae0165518475ca72d554cd1fdcb76a</td>
+       <td>CVE-2022-28979</td>
+       <td>2022-09-22 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Liferay Portal v7.1.0 through v7.4.2 and Liferay DXP v7.3 before service pack 3 was discovered to contain a cross-site scripting (XSS) vulnerability in the Portal Search module's Custom Facet widget. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Custom Parameter Name text field.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28979">详情</a></td>
+      </tr>
+
       <tr>
        <td>18fc3eadbe796731bbc3b1b079e1617c</td>
        <td>CVE-2022-39224</td>
@@ -441,86 +521,6 @@
        <td>2022-09-21 19:15:00 <img src="imgs/new.gif" /></td>
        <td>A flaw was found in Keylime before 6.3.0. The logic in the Keylime agent for checking for a secure mount can be fooled by previously created unprivileged mounts allowing secrets to be leaked to other processes on the host.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23948">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ec8cd2c4b57851a08985b815b8fc605f</td>
-       <td>CVE-2022-40616</td>
-       <td>2022-09-21 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>IBM Maximo Asset Management 7.6.1.1, 7.6.1.2, and 7.6.1.3 could allow a user to bypass authentication and obtain sensitive information or perform tasks they should not have access to. IBM X-Force ID: 236311.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40616">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>003ab654bac950c465408888cb2885cd</td>
-       <td>CVE-2022-37027</td>
-       <td>2022-09-21 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Ahsay AhsayCBS 9.1.4.0 allows an authenticated system user to inject arbitrary Java JVM options. Administrators that can modify the Runtime Options in the web interface can inject Java Runtime Options. These take effect after a restart. For example, an attacker can enable JMX services and consequently achieve remote code execution as the system user.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37027">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5976e94c5dcf6df8b6fdaee466411f2b</td>
-       <td>CVE-2022-3251</td>
-       <td>2022-09-21 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Sensitive Cookie in HTTPS Session Without 'Secure' Attribute in GitHub repository ikus060/minarca prior to 4.2.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3251">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5e0a8fe7fdd1f9f6aeba50f481a75775</td>
-       <td>CVE-2022-3250</td>
-       <td>2022-09-21 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Sensitive Cookie in HTTPS Session Without 'Secure' Attribute in GitHub repository ikus060/rdiffweb prior to 2.4.6.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3250">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3bc667dfe40e293f07a564e6910d71b5</td>
-       <td>CVE-2022-41255</td>
-       <td>2022-09-21 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>Jenkins CONS3RT Plugin 1.0.0 and earlier stores Cons3rt API token unencrypted in job config.xml files on the Jenkins controller where it can be viewed by users with access to the Jenkins controller file system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41255">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dc442fd8635676817dfaba3dfe08de7c</td>
-       <td>CVE-2022-41254</td>
-       <td>2022-09-21 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>Missing permission checks in Jenkins CONS3RT Plugin 1.0.0 and earlier allow attackers with Overall/Read permission to connect to an attacker-specified HTTP server using attacker-specified credentials IDs obtained through another method, capturing credentials stored in Jenkins.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41254">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5f979df8b2804461eda93e7bdad7c275</td>
-       <td>CVE-2022-41253</td>
-       <td>2022-09-21 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>A cross-site request forgery (CSRF) vulnerability in Jenkins CONS3RT Plugin 1.0.0 and earlier allows attackers to connect to an attacker-specified HTTP server using attacker-specified credentials IDs obtained through another method, capturing credentials stored in Jenkins.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41253">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b405e85e0b2120a6f66dfc98bc643bfe</td>
-       <td>CVE-2022-41252</td>
-       <td>2022-09-21 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>Missing permission checks in Jenkins CONS3RT Plugin 1.0.0 and earlier allows users with Overall/Read permission to enumerate credentials ID of credentials stored in Jenkins.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41252">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c8dd8474669c4c3789c7a9c087596bf7</td>
-       <td>CVE-2022-41251</td>
-       <td>2022-09-21 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>A missing permission check in Jenkins Apprenda Plugin 2.2.0 and earlier allows users with Overall/Read permission to enumerate credentials IDs of credentials stored in Jenkins.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41251">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d7627dc927d8f5eabb62def1f43281af</td>
-       <td>CVE-2022-41250</td>
-       <td>2022-09-21 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>A missing permission check in Jenkins SCM HttpClient Plugin 1.5 and earlier allows attackers with Overall/Read permission to connect to an attacker-specified HTTP server using attacker-specified credentials IDs obtained through another method, capturing credentials stored in Jenkins.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41250">详情</a></td>
       </tr>
 
      </tbody>
@@ -1932,6 +1932,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>71675eef45e3b2eae813ed20161a875d</td>
+       <td>CVE-2022-22686</td>
+       <td>2022-09-21 07:47:18 <img src="imgs/new.gif" /></td>
+       <td>Synology Calendar跨站请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70024">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bcde49183e418fa675c1122c6abe8273</td>
+       <td>CVE-2022-27611</td>
+       <td>2022-09-21 07:47:18 <img src="imgs/new.gif" /></td>
+       <td>Synology Audio Station路径遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70023">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d7da3fa41b2233cb4cc1f26dc742f2b6</td>
+       <td>CVE-2022-22683</td>
+       <td>2022-09-21 07:47:18 <img src="imgs/new.gif" /></td>
+       <td>Synology Media Server缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70022">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ca0cff45722227c43e85b1a96815a67e</td>
+       <td>CVE-2022-2478</td>
+       <td>2022-09-21 07:47:18 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70021">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1fd8351d5a20eb1535b3e16ea9dabcf9</td>
+       <td>CVE-2022-1863</td>
+       <td>2022-09-21 07:47:18 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70020">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c254d1ceba1b4e8affba9c843d521fe1</td>
+       <td>CVE-2022-2165</td>
+       <td>2022-09-21 07:47:18 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70019">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>052d2d4056cfa9e851072fe52642a828</td>
+       <td>CVE-2022-1875</td>
+       <td>2022-09-21 07:47:18 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70018">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>164c72c58ebf406f9f7d2bd4b7728c81</td>
+       <td>CVE-2022-1869</td>
+       <td>2022-09-21 07:47:18 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome类型混淆漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70017">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bfb124e6cc4fd060d228448e91a3b782</td>
+       <td>CVE-2022-2157</td>
+       <td>2022-09-21 07:47:18 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70016">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1c8dfce137e623841a2fd77be0c8c1ad</td>
+       <td>CVE-2022-1919</td>
+       <td>2022-09-21 07:47:18 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70015">详情</a></td>
+      </tr>
+
+      <tr>
        <td>7da0d36d0d36f8710c418e2631aed8e4</td>
        <td>CVE-2022-34981</td>
        <td>2022-09-20 10:36:13</td>
@@ -2089,86 +2169,6 @@
        <td>2022-09-16 09:35:05</td>
        <td>Ansys SpaceClaim越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69912">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0c60852b5188079f0cd9b5ef11c4b817</td>
-       <td>CVE-2022-40654</td>
-       <td>2022-09-16 09:35:05</td>
-       <td>Ansys SpaceClaim越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69911">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e7e10699b7b575b0b9dd1485b0bb20b0</td>
-       <td>CVE-2022-40638</td>
-       <td>2022-09-16 09:35:05</td>
-       <td>Ansys SpaceClaim内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69910">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>81bcce0fe333b172187a23de6c96cb72</td>
-       <td>CVE-2022-40639</td>
-       <td>2022-09-16 09:35:05</td>
-       <td>Ansys SpaceClaim内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69909">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3911df7b5a7372892ae6c53723bedf40</td>
-       <td>CVE-2022-40640</td>
-       <td>2022-09-16 09:35:05</td>
-       <td>Ansys SpaceClaim越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69908">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dc7eeda5cf07388ab8f75b07b00bfc2f</td>
-       <td>CVE-2022-40641</td>
-       <td>2022-09-16 09:35:05</td>
-       <td>Ansys SpaceClaim越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69907">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>85db4ecffe44af10dcbcebdfbe37eb92</td>
-       <td>CVE-2022-40643</td>
-       <td>2022-09-16 09:35:05</td>
-       <td>Ansys SpaceClaim未初始化指针漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69906">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>15de62913e87fbafe99613a526c86c5d</td>
-       <td>CVE-2022-40644</td>
-       <td>2022-09-16 09:35:05</td>
-       <td>Ansys SpaceClaim越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69905">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>facd65cc6500b44ef04e98f67286b252</td>
-       <td>CVE-2022-40645</td>
-       <td>2022-09-16 09:35:05</td>
-       <td>Ansys SpaceClaim未初始化指针漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69904">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b95d398c4dea03e4a8a47e39b2595fe9</td>
-       <td>CVE-2022-40646</td>
-       <td>2022-09-16 09:35:05</td>
-       <td>Ansys SpaceClaim未初始化指针漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69903">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2db6b071d8a79e6eeb574881300c0e2a</td>
-       <td>CVE-2022-40647</td>
-       <td>2022-09-16 09:35:05</td>
-       <td>Ansys SpaceClaim越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/69902">详情</a></td>
       </tr>
 
      </tbody>
