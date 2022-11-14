@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-11-14 16:47:10 -->
+<!-- RELEASE TIME : 2022-11-14 21:28:47 -->
 <html lang="zh-cn">
 
  <head>
@@ -2364,6 +2364,14 @@
       </tr>
 
       <tr>
+       <td>bcfc55e49898efdcaed7bb63ba11741a</td>
+       <td>CVE-2022-44559</td>
+       <td>2022-11-09 21:15:18 </td>
+       <td>The AMS module has a vulnerability of serialization/deserialization mismatch. Successful exploitation of this vulnerability may cause privilege escalation.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44559">详情</a></td>
+      </tr>
+
+      <tr>
        <td>50f5c3dd74ba638b25d407a94e2975f3</td>
        <td>CVE-2022-44546</td>
        <td>2022-11-09 21:15:17 </td>
@@ -2417,14 +2425,6 @@
        <td>2022-11-09 07:15:10 </td>
        <td>In Xfce xfce4-settings before 4.16.4 and 4.17.x before 4.17.1, there is an argument injection vulnerability in xfce4-mime-helper.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45062">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>50ad83f5ab532745334f5a566492621c</td>
-       <td>CVE-2022-45061</td>
-       <td>2022-11-09 07:15:09 </td>
-       <td>An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presented to the decoder could lead to a CPU denial of service. Hostnames are often supplied by remote servers that could be controlled by a malicious actor; in such a scenario, they could trigger excessive CPU consumption on the client attempting to make use of an attacker-supplied supposed hostname. For example, the attack payload could be placed in the Location header of an HTTP response with status code 302. A fix is planned in 3.11.1, 3.10.9, 3.9.16, 3.8.16, and 3.7.16.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45061">详情</a></td>
       </tr>
 
      </tbody>
