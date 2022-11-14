@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-11-14 04:02:57 -->
+<!-- RELEASE TIME : 2022-11-14 06:37:31 -->
 <html lang="zh-cn">
 
  <head>
@@ -27,6 +27,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>68d7f15ea249630c9a95ff95be6610fa</td>
+       <td></td>
+       <td>2022-11-14 06:35:04 <img src="imgs/new.gif" /></td>
+       <td>安全事件周报 (11.07-11.13)</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=acc9fb8d90b76d3ccf3b8bb9d0245f1a">详情</a></td>
+      </tr>
+
       <tr>
        <td>f98775f408249c11c8e1289d91f1d4bc</td>
        <td></td>
@@ -257,14 +265,6 @@
        <td>2022-08-29 08:37:40</td>
        <td>某流行企业财务软件0day漏洞大规模勒索利用通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=80f068da8ba97d0c0d7556f26702a67d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>926858936b4c98f9c58a0795ca7b3df1</td>
-       <td></td>
-       <td>2022-08-29 06:54:30</td>
-       <td>安全事件周报 (08.22-08.28)</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=7bb9a552a8fb6a3ee1ceda0d827d873c">详情</a></td>
       </tr>
 
      </tbody>
@@ -2204,6 +2204,14 @@
       </tr>
 
       <tr>
+       <td>c1951f29eccbeca841a3d27cefa879fc</td>
+       <td>CVE-2022-44590</td>
+       <td>2022-11-09 22:15:25 </td>
+       <td>Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in James Lao's Simple Video Embedder plugin &lt;= 2.2 on WordPress.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44590">详情</a></td>
+      </tr>
+
+      <tr>
        <td>009df47c3b0dacb59d8e6020cdc6c809</td>
        <td>CVE-2022-39893</td>
        <td>2022-11-09 22:15:18 </td>
@@ -2340,6 +2348,22 @@
       </tr>
 
       <tr>
+       <td>cff5eb46095190093a1bb45fb8081a98</td>
+       <td>CVE-2022-44562</td>
+       <td>2022-11-09 21:15:18 </td>
+       <td>The system framework layer has a vulnerability of serialization/deserialization mismatch. Successful exploitation of this vulnerability may cause privilege escalation.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44562">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b3580ea6a73163190be598839cb5c609</td>
+       <td>CVE-2022-44550</td>
+       <td>2022-11-09 21:15:18 </td>
+       <td>The graphics display module has a UAF vulnerability when traversing graphic layers. Successful exploitation of this vulnerability may affect system availability.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44550">详情</a></td>
+      </tr>
+
+      <tr>
        <td>50f5c3dd74ba638b25d407a94e2975f3</td>
        <td>CVE-2022-44546</td>
        <td>2022-11-09 21:15:17 </td>
@@ -2401,30 +2425,6 @@
        <td>2022-11-09 07:15:09 </td>
        <td>An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presented to the decoder could lead to a CPU denial of service. Hostnames are often supplied by remote servers that could be controlled by a malicious actor; in such a scenario, they could trigger excessive CPU consumption on the client attempting to make use of an attacker-supplied supposed hostname. For example, the attack payload could be placed in the Location header of an HTTP response with status code 302. A fix is planned in 3.11.1, 3.10.9, 3.9.16, 3.8.16, and 3.7.16.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45061">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d8eb7bc68035b8de9c90f46adf4da7d9</td>
-       <td>CVE-2022-45060</td>
-       <td>2022-11-09 06:15:09 </td>
-       <td>An HTTP Request Forgery issue was discovered in Varnish Cache 5.x and 6.x before 6.0.11, 7.x before 7.1.2, and 7.2.x before 7.2.1. An attacker may introduce characters through HTTP/2 pseudo-headers that are invalid in the context of an HTTP/1 request line, causing the Varnish server to produce invalid HTTP/1 requests to the backend. This could, in turn, be used to exploit vulnerabilities in a server behind the Varnish server. Note: the 6.0.x LTS series (before 6.0.11) is affected.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45060">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>005ade8d2ef02a7343420665d56f13fe</td>
-       <td>CVE-2022-45059</td>
-       <td>2022-11-09 06:15:09 </td>
-       <td>An issue was discovered in Varnish Cache 7.x before 7.1.2 and 7.2.x before 7.2.1. A request smuggling attack can be performed on Varnish Cache servers by requesting that certain headers are made hop-by-hop, preventing the Varnish Cache servers from forwarding critical headers to the backend.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45059">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8a3268affaaf2b67dfea7d4e251148e3</td>
-       <td>CVE-2022-39390</td>
-       <td>2022-11-09 01:15:09 </td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2020-36534. Reason: This candidate is a reservation duplicate of CVE-2020-36534. Notes: All CVE users should reference CVE-2020-36534 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39390">详情</a></td>
       </tr>
 
      </tbody>
