@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-12-14 15:27:38 -->
+<!-- RELEASE TIME : 2022-12-14 16:37:02 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6e96f573805b70260049c3fa28938d30</td>
+       <td>CVE-2022-23516</td>
+       <td>2022-12-14 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>Loofah is a general library for manipulating and transforming HTML/XML documents and fragments, built on top of Nokogiri. Loofah >= 2.2.0, < 2.19.1 uses recursion for sanitizing CDATA sections, making it susceptible to stack exhaustion and raising a SystemStackError exception. This may lead to a denial of service through CPU resource consumption. This issue is patched in version 2.19.1. Users who are unable to upgrade may be able to mitigate this vulnerability by limiting the length of the strings that are sanitized.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23516">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>57c78e0923a8e72d3d74ea54950caf8b</td>
+       <td>CVE-2022-23515</td>
+       <td>2022-12-14 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>Loofah is a general library for manipulating and transforming HTML/XML documents and fragments, built on top of Nokogiri. Loofah >= 2.1.0, < 2.19.1 is vulnerable to cross-site scripting via the image/svg+xml media type in data URIs. This issue is patched in version 2.19.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23515">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bf0aca3cf992bea5afd679d8abb39355</td>
+       <td>CVE-2022-23514</td>
+       <td>2022-12-14 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>Loofah is a general library for manipulating and transforming HTML/XML documents and fragments, built on top of Nokogiri. Loofah < 2.19.1 contains an inefficient regular expression that is susceptible to excessive backtracking when attempting to sanitize certain SVG attributes. This may lead to a denial of service through CPU resource consumption. This issue is patched in version 2.19.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23514">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>21b028d58d4fc4bba13be0d0ddf29e7e</td>
+       <td>CVE-2022-23512</td>
+       <td>2022-12-14 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>MeterSphere is a one-stop open source continuous testing platform. Versions prior to 2.4.1 are vulnerable to Path Injection in ApiTestCaseService::deleteBodyFiles which takes a user-controlled string id and passes it to ApiTestCaseService, which uses the user-provided value (testId) in new File(BODY_FILE_DIR + "/" + testId), being deleted later by file.delete(). By adding some camouflage parameters to the url, an attacker can target files on the server. The vulnerability has been fixed in v2.4.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23512">详情</a></td>
+      </tr>
+
+      <tr>
        <td>aa86312c6446c734969953950e4ccfa8</td>
        <td>CVE-2022-4494</td>
        <td>2022-12-14 12:15:00 <img src="imgs/new.gif" /></td>
@@ -489,38 +521,6 @@
        <td>2022-12-13 19:15:00 <img src="imgs/new.gif" /></td>
        <td>Microsoft Office Graphics Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2022-26804, CVE-2022-26805, CVE-2022-26806, CVE-2022-44692, CVE-2022-47211, CVE-2022-47212.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47213">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d991fbdbee9b0594d0f2d3741f48c21e</td>
-       <td>CVE-2022-47212</td>
-       <td>2022-12-13 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Microsoft Office Graphics Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2022-26804, CVE-2022-26805, CVE-2022-26806, CVE-2022-44692, CVE-2022-47211, CVE-2022-47213.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47212">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0b3d67e01fa6bb103841a2f2c6585387</td>
-       <td>CVE-2022-47211</td>
-       <td>2022-12-13 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Microsoft Office Graphics Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2022-26804, CVE-2022-26805, CVE-2022-26806, CVE-2022-44692, CVE-2022-47212, CVE-2022-47213.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47211">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1e0c6fbfa8fc161286fc38d8278c1f8c</td>
-       <td>CVE-2022-45005</td>
-       <td>2022-12-13 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>IP-COM EW9 V15.11.0.14(9732) was discovered to contain a command injection vulnerability in the cmd_get_ping_output function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45005">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>162e49b2dde30ae99406257932275af4</td>
-       <td>CVE-2022-44713</td>
-       <td>2022-12-13 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Microsoft Outlook for Mac Spoofing Vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44713">详情</a></td>
       </tr>
 
      </tbody>
