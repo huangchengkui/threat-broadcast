@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-12-15 23:25:38 -->
+<!-- RELEASE TIME : 2022-12-16 02:40:20 -->
 <html lang="zh-cn">
 
  <head>
@@ -30,7 +30,7 @@
       <tr>
        <td>29420db03cefa956d3263ee7127f3234</td>
        <td></td>
-       <td>2022-12-14 03:50:13 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 03:50:13</td>
        <td>2022-12 补丁日: 微软多个漏洞安全更新通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=935419ecdd8829b62e8133ee16c2daf6">详情</a></td>
       </tr>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d472bfee071da808411f262c38eccc20</td>
+       <td>CVE-2022-41960</td>
+       <td>2022-12-16 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>BigBlueButton is an open source web conferencing system. Versions prior to 2.4.3, are subject to Insufficient Verification of Data Authenticity, resulting in Denial of Service. An attacker can make a Meteor call to `validateAuthToken` using a victim's userId, meetingId, and an invalid authToken. This forces the victim to leave the conference, because the resulting verification failure is also observed and handled by the victim's client. The attacker must be a participant in any meeting on the server. This issue is patched in version 2.4.3. There are no workarounds.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41960">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ecc3b7721930d11a2b82b4863e9d51e5</td>
+       <td>CVE-2022-46393</td>
+       <td>2022-12-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Mbed TLS before 2.28.2 and 3.x before 3.3.0. There is a potential heap-based buffer overflow and heap-based buffer over-read in DTLS if MBEDTLS_SSL_DTLS_CONNECTION_ID is enabled and MBEDTLS_SSL_CID_IN_LEN_MAX > 2 * MBEDTLS_SSL_CID_OUT_LEN_MAX.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46393">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5bbf18291d4863ba32d1f4abae240f44</td>
+       <td>CVE-2022-46392</td>
+       <td>2022-12-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Mbed TLS before 2.28.2 and 3.x before 3.3.0. An adversary with access to precise enough information about memory accesses (typically, an untrusted operating system attacking a secure enclave) can recover an RSA private key after observing the victim performing a single private-key operation, if the window size (MBEDTLS_MPI_WINDOW_SIZE) used for the exponentiation is 3 or smaller.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46392">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ce4c0b8c9e2bf1bbdb67a8e6a0b307d4</td>
+       <td>CVE-2022-45969</td>
+       <td>2022-12-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Alist v3.4.0 is vulnerable to Directory Traversal,</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45969">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>79916d56751bee6a9ef295ea20bfaff1</td>
+       <td>CVE-2022-45338</td>
+       <td>2022-12-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>An arbitrary file upload vulnerability in the profile picture upload function of Exact Synergy Enterprise 267 before 267SP13 and Exact Synergy Enterprise 500 before 500SP6 allows attackers to execute arbitrary code via a crafted SVG file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45338">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>18a9e87530bb8971a2a355f36b81eb8d</td>
+       <td>CVE-2022-40004</td>
+       <td>2022-12-15 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross Site Scripting (XSS) vulnerability in Things Board 3.4.1 allows remote attackers to escalate privilege via crafted URL to the Audit Log.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40004">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>deabecc735a7b5c29e53ffb3f38d47bc</td>
+       <td>CVE-2022-46634</td>
+       <td>2022-12-15 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>TOTOlink A7100RU V7.4cu.2313_B20191024 was discovered to contain a command injection vulnerability via the wscDisabled parameter in the setting/setWiFiWpsCfg function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46634">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4e68cc42374faedab80687076fd9312e</td>
+       <td>CVE-2022-46631</td>
+       <td>2022-12-15 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>TOTOlink A7100RU V7.4cu.2313_B20191024 was discovered to contain a command injection vulnerability via the wscDisabled parameter in the setting/setWiFiSignalCfg function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46631">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4098cf34a8bc22a33f1d830579abf94f</td>
+       <td>CVE-2022-4527</td>
+       <td>2022-12-15 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in collective.task up to 3.0.9. It has been classified as problematic. This affects the function renderCell/AssignedGroupColumn of the file src/collective/task/browser/table.py. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 3.0.10 is able to address this issue. The name of the patch is 1aac7f83fa2c2b41d59ba02748912953461f3fac. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-215907.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4527">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>12ba3040705abdfe0e7d89a7e4c5b58f</td>
+       <td>CVE-2022-4526</td>
+       <td>2022-12-15 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in django-photologue up to 3.15.1 and classified as problematic. Affected by this issue is some unknown functionality of the file photologue/templates/photologue/photo_detail.html of the component Default Template Handler. The manipulation of the argument object.caption leads to cross site scripting. The attack may be launched remotely. Upgrading to version 3.16 is able to address this issue. The name of the patch is 960cb060ce5e2964e6d716ff787c72fc18a371e7. It is recommended to apply a patch to fix this issue. VDB-215906 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4526">详情</a></td>
+      </tr>
+
+      <tr>
        <td>eb8d737f71e64bb9001ea66d4d6ddb9e</td>
        <td>CVE-2022-4514</td>
        <td>2022-12-15 20:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-12-15 01:15:00 <img src="imgs/new.gif" /></td>
        <td>Improper Input Validation in GitHub repository openemr/openemr prior to 7.0.0.2.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4504">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d046dc6a035c77c012f2cf4635c9e980</td>
-       <td>CVE-2022-4503</td>
-       <td>2022-12-15 01:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cross-site Scripting (XSS) - Generic in GitHub repository openemr/openemr prior to 7.0.0.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4503">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ed85cdd51074f22b6fc9a8f18282d5a0</td>
-       <td>CVE-2022-4502</td>
-       <td>2022-12-15 01:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cross-site Scripting (XSS) - Reflected in GitHub repository openemr/openemr prior to 7.0.0.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4502">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f9588d0b58c8b9b9ba669b9f6be8121c</td>
-       <td>CVE-2022-4410</td>
-       <td>2022-12-14 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>The Permalink Manager Lite plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to, and including 2.2.20.3 due to improper output escaping on post/page/media titles. This makes it possible for attackers to inject arbitrary web scripts on the permalink-manager page if another plugin or theme is installed on the site that allows lower privileged users with unfiltered_html the ability to modify post/page titles with malicious web scripts.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4410">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>09fbb6c88093961e60cfd6f435bef9c6</td>
-       <td>CVE-2022-3917</td>
-       <td>2022-12-14 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>Improper access control of bootloader function was discovered in Motorola Mobility Motorola e20 prior to version RONS31.267-38-8 allows attacker with local access to read partition or RAM data.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3917">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f11d8824b77e0e659e990d92dec3bce5</td>
-       <td>CVE-2020-4497</td>
-       <td>2022-12-14 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>IBM Spectrum Protect Plus 10.1.0 through 10.1.12 discloses sensitive information due to unencrypted data being used in the communication flow between Spectrum Protect Plus vSnap and its agents. An attacker could obtain information using main in the middle techniques. IBM X-Force ID: 182106.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-4497">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ebe59819bede0622f49e6e653efd90d5</td>
-       <td>CVE-2022-47411</td>
-       <td>2022-12-14 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue was discovered in the fp_newsletter (aka Newsletter subscriber management) extension before 1.1.1, 1.2.0, 2.x before 2.1.2, 2.2.1 through 2.4.0, and 3.x before 3.2.6 for TYPO3. Data about subscribers may be obtained via unsubscribeAction operations.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47411">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2f288be7e8872629e4038aee7175749e</td>
-       <td>CVE-2022-47410</td>
-       <td>2022-12-14 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue was discovered in the fp_newsletter (aka Newsletter subscriber management) extension before 1.1.1, 1.2.0, 2.x before 2.1.2, 2.2.1 through 2.4.0, and 3.x before 3.2.6 for TYPO3. Data about subscribers may be obtained via createAction operations.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47410">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a56c6c390ebd503543ca80bf35410efe</td>
-       <td>CVE-2022-47409</td>
-       <td>2022-12-14 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue was discovered in the fp_newsletter (aka Newsletter subscriber management) extension before 1.1.1, 1.2.0, 2.x before 2.1.2, 2.2.1 through 2.4.0, and 3.x before 3.2.6 for TYPO3. Attackers can unsubscribe everyone via a series of modified subscription UIDs in deleteAction operations.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47409">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>023343adea8fde128350fb918bbcdc79</td>
-       <td>CVE-2022-47408</td>
-       <td>2022-12-14 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue was discovered in the fp_newsletter (aka Newsletter subscriber management) extension before 1.1.1, 1.2.0, 2.x before 2.1.2, 2.2.1 through 2.4.0, and 3.x before 3.2.6 for TYPO3. There is a CAPTCHA bypass that can lead to subscribing many people.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47408">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d5b1a283a79a3f792cfff8c36a83d6b2</td>
-       <td>CVE-2022-47407</td>
-       <td>2022-12-14 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue was discovered in the fp_masterquiz (aka Master-Quiz) extension before 2.2.1, and 3.x before 3.5.1, for TYPO3. An attacker can continue the quiz of a different user. In doing so, the attacker can view that user's answers and modify those answers.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47407">详情</a></td>
       </tr>
 
      </tbody>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>5a0f97c2be950527905056279a2c1146</td>
        <td>CVE-2022-3092</td>
-       <td>2022-12-14 20:26:41 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 20:26:41</td>
        <td>GE CIMPLICITY Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8bc3279bf1eb43f391ef6b4f2c666c71">详情</a></td>
       </tr>
@@ -1942,7 +1942,7 @@
       <tr>
        <td>bc4386baf0448b503633d56c34905a22</td>
        <td>CVE-2022-37906</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Aruba Networks ArubaOS路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73914">详情</a></td>
       </tr>
@@ -1950,7 +1950,7 @@
       <tr>
        <td>a848e43f5ac2b5efa837691b0a704c8e</td>
        <td>CVE-2022-37899</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Aruba Networks ArubaOS命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73913">详情</a></td>
       </tr>
@@ -1958,7 +1958,7 @@
       <tr>
        <td>2f5890f451d025893f706cdecd01c68f</td>
        <td>CVE-2022-37898</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Aruba Networks ArubaOS命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73912">详情</a></td>
       </tr>
@@ -1966,7 +1966,7 @@
       <tr>
        <td>ddc66a55ca5bf4e12ee48d6162807d5a</td>
        <td>CVE-2022-37903</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Aruba Networks ArubaOS远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73911">详情</a></td>
       </tr>
@@ -1974,7 +1974,7 @@
       <tr>
        <td>180c0dcf8224572ba802e55ae7edc06b</td>
        <td>CVE-2022-37905</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Aruba Networks ArubaOS存在未明漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73910">详情</a></td>
       </tr>
@@ -1982,7 +1982,7 @@
       <tr>
        <td>e5188936341e23adc4b3338886520ded</td>
        <td>CVE-2022-37904</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Aruba Networks ArubaOS存在未明漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73909">详情</a></td>
       </tr>
@@ -1990,7 +1990,7 @@
       <tr>
        <td>fa6f1196e5fb2de0494a3901201f4894</td>
        <td>CVE-2022-37907</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Aruba Networks ArubaOS拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73908">详情</a></td>
       </tr>
@@ -1998,7 +1998,7 @@
       <tr>
        <td>6d8f4ff19fe980c76bb7df3bf7b2c881</td>
        <td>CVE-2022-37910</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Aruba Networks ArubaOS缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73907">详情</a></td>
       </tr>
@@ -2006,7 +2006,7 @@
       <tr>
        <td>02c1abea40510e5d3dc9daa18c7fda6e</td>
        <td>CVE-2022-37908</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Aruba Networks ArubaOS存在未明漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73906">详情</a></td>
       </tr>
@@ -2014,7 +2014,7 @@
       <tr>
        <td>20138f40a0bfeb2e278c608c554b1aa6</td>
        <td>CVE-2022-37909</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Aruba Networks ArubaOS敏感信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73905">详情</a></td>
       </tr>
@@ -2022,7 +2022,7 @@
       <tr>
        <td>05a88c0252b20d2497b7d79360a53c5c</td>
        <td>CVE-2022-39898</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Samsung Mobile访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73904">详情</a></td>
       </tr>
@@ -2030,7 +2030,7 @@
       <tr>
        <td>a01bc90b7cf5af97f95258173102eaee</td>
        <td>CVE-2022-39897</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Samsung Mobile敏感信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73903">详情</a></td>
       </tr>
@@ -2038,7 +2038,7 @@
       <tr>
        <td>d8b5607264f813bd588a1d43a86fcbe5</td>
        <td>CVE-2022-39900</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Samsung Mobile访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73902">详情</a></td>
       </tr>
@@ -2046,7 +2046,7 @@
       <tr>
        <td>37701321590f7cb630bb57c5df8a5571</td>
        <td>CVE-2022-39899</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Samsung Mobile身份验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73901">详情</a></td>
       </tr>
@@ -2054,7 +2054,7 @@
       <tr>
        <td>2f8f5346dc266ee5a6e3b8b3e6caa1fc</td>
        <td>CVE-2022-39911</td>
-       <td>2022-12-14 10:28:57 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 10:28:57</td>
        <td>Samsung Pass异常情况处理错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73900">详情</a></td>
       </tr>
@@ -2062,7 +2062,7 @@
       <tr>
        <td>c05644899ae59e40fcaad0206ce8e7f8</td>
        <td>CVE-2022-4194</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome Accessibility内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73865">详情</a></td>
       </tr>
@@ -2070,7 +2070,7 @@
       <tr>
        <td>e0258e7966936a07e210eb2854f47e5e</td>
        <td>CVE-2022-4184</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome Autofill策略执行不当漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73864">详情</a></td>
       </tr>
@@ -2078,7 +2078,7 @@
       <tr>
        <td>ef82730cfe8e3f88bbb1c7a785252447</td>
        <td>CVE-2022-4183</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome Popup Blocker策略执行不当漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73863">详情</a></td>
       </tr>
@@ -2086,7 +2086,7 @@
       <tr>
        <td>562777d58f9d9f1e0b381041f5b44f72</td>
        <td>CVE-2022-4186</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome Downloads输入验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73862">详情</a></td>
       </tr>
@@ -2094,7 +2094,7 @@
       <tr>
        <td>c72a4fa2a733e883ac535c04364c94f0</td>
        <td>CVE-2022-4189</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome DevTools策略执行不当漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73861">详情</a></td>
       </tr>
@@ -2102,7 +2102,7 @@
       <tr>
        <td>a2f4a9b53aa2950a69412defa508b160</td>
        <td>CVE-2022-4188</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome CORS输入验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73860">详情</a></td>
       </tr>
@@ -2110,7 +2110,7 @@
       <tr>
        <td>11346981c5ae58b48b7f039bc616aad3</td>
        <td>CVE-2022-4185</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome Navigation实现不当漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73859">详情</a></td>
       </tr>
@@ -2118,7 +2118,7 @@
       <tr>
        <td>68ce7155fc3cd43b1115ebd0a4575e73</td>
        <td>CVE-2022-4187</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome DevTools策略执行不当漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73858">详情</a></td>
       </tr>
@@ -2126,7 +2126,7 @@
       <tr>
        <td>eaf79a6c721c541e627c271bc9825565</td>
        <td>CVE-2022-4177</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome Extensions内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73857">详情</a></td>
       </tr>
@@ -2134,7 +2134,7 @@
       <tr>
        <td>ffe1ae041f7d06a71eb51f13a33b91ec</td>
        <td>CVE-2022-4175</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome Camera Capture内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73856">详情</a></td>
       </tr>
@@ -2142,7 +2142,7 @@
       <tr>
        <td>5ff8449e4235e2b4521d402c8cba7e9c</td>
        <td>CVE-2022-4178</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome Mojo内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73855">详情</a></td>
       </tr>
@@ -2150,7 +2150,7 @@
       <tr>
        <td>a220feea80639a3ab4e76a5b138f639c</td>
        <td>CVE-2022-4182</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome Fenced Frames实现不当漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73854">详情</a></td>
       </tr>
@@ -2158,7 +2158,7 @@
       <tr>
        <td>932deadc734a0d5c3b52c25dac518f1d</td>
        <td>CVE-2022-4179</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome Audio内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73853">详情</a></td>
       </tr>
@@ -2166,7 +2166,7 @@
       <tr>
        <td>47452eb24d1b82f6570bfbaae795d3ed</td>
        <td>CVE-2022-4174</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome V8类型混淆漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73852">详情</a></td>
       </tr>
@@ -2174,7 +2174,7 @@
       <tr>
        <td>6a52d9c9fe6d9dc5d5c53b1fb473237c</td>
        <td>CVE-2022-4180</td>
-       <td>2022-12-14 06:31:45 <img src="imgs/new.gif" /></td>
+       <td>2022-12-14 06:31:45</td>
        <td>Google Chrome Mojo内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73851">详情</a></td>
       </tr>
@@ -2404,35 +2404,35 @@
       </tr>
 
       <tr>
-       <td>61309aa0cccaeade024f4578576fdcb0</td>
-       <td>CVE-2022-37912</td>
-       <td>2022-12-12 13:15:13 </td>
-       <td>Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities results in the ability to execute arbitrary commands as a privileged user on the underlying operating system.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37912">详情</a></td>
+       <td>bf53d3788ea9bdb5898784c0b724497d</td>
+       <td>CVE-2022-38395</td>
+       <td>2022-12-12 13:15:14 </td>
+       <td>HP Support Assistant uses HP Performance Tune-up as a diagnostic tool. HP Support Assistant uses Fusion to launch HP Performance Tune-up. It is possible for an attacker to exploit the DLL hijacking vulnerability and elevate privileges when Fusion launches the HP Performance Tune-up.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38395">详情</a></td>
       </tr>
 
       <tr>
-       <td>89d1c4ead9d3ee9ef8b05ea95b1e5fd4</td>
-       <td>CVE-2022-37911</td>
-       <td>2022-12-12 13:15:13 </td>
-       <td>Due to improper restrictions on XML entities multiple vulnerabilities exist in the command line interface of ArubaOS. A successful exploit could allow an authenticated attacker to retrieve files from the local system or cause the application to consume system resources, resulting in a denial of service condition.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37911">详情</a></td>
+       <td>6de6713c8db385f533cdfdc8fbcfa14f</td>
+       <td>CVE-2022-37932</td>
+       <td>2022-12-12 13:15:14 </td>
+       <td>A potential security vulnerability has been identified in Hewlett Packard Enterprise OfficeConnect 1820, 1850, and 1920S Network switches. The vulnerability could be remotely exploited to allow authentication bypass. HPE has made the following software updates to resolve the vulnerability in Hewlett Packard Enterprise OfficeConnect 1820, 1850 and 1920S Network switches versions: Prior to PT.02.14; Prior to PC.01.22; Prior to PO.01.21; Prior to PD.02.22;</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37932">详情</a></td>
       </tr>
 
       <tr>
-       <td>92badcaedf9f02995226f7713526fc39</td>
-       <td>CVE-2022-37910</td>
-       <td>2022-12-12 13:15:13 </td>
-       <td>A buffer overflow vulnerability exists in the ArubaOS command line interface. Successful exploitation of this vulnerability results in a denial of service on the affected system.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37910">详情</a></td>
+       <td>167f027dfb7cc604b2246380dfb6bbc8</td>
+       <td>CVE-2022-37930</td>
+       <td>2022-12-12 13:15:14 </td>
+       <td>A security vulnerability has been identified in HPE Nimble Storage Hybrid Flash Arrays and HPE Nimble Storage Secondary Flash Arrays which could potentially allow local disclosure of sensitive information.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37930">详情</a></td>
       </tr>
 
       <tr>
-       <td>dd268703503f5680ff1e6f9319e86718</td>
-       <td>CVE-2022-37909</td>
-       <td>2022-12-12 13:15:13 </td>
-       <td>Aruba has identified certain configurations of ArubaOS that can lead to sensitive information disclosure from the configured ESSIDs. The scenarios in which disclosure of potentially sensitive information can occur are complex, and depend on factors beyond the control of attackers.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37909">详情</a></td>
+       <td>cdb021b00f4e37ab7583cdce38a055c1</td>
+       <td>CVE-2022-37929</td>
+       <td>2022-12-12 13:15:14 </td>
+       <td>Improper Privilege Management vulnerability in Hewlett Packard Enterprise Nimble Storage Hybrid Flash Arrays and Nimble Storage Secondary Flash Arrays.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37929">详情</a></td>
       </tr>
 
      </tbody>
