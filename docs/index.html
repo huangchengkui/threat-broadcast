@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-06-21 10:31:01 -->
+<!-- RELEASE TIME : 2023-06-21 13:27:04 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>1a33e6111b879061675e8e7e83294d3b</td>
+       <td>CVE-2023-34981</td>
+       <td>2023-06-21 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>A regression in the fix for bug 66512 in Apache Tomcat 11.0.0-M5, 10.1.8, 9.0.74 and 8.5.88 meant that, if a response did not include any HTTP headers no AJP SEND_HEADERS messare woudl be sent for the response which in turn meant that at least one AJP proxy (mod_proxy_ajp) would use the response headers from the previous request leading to an information leak.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34981">详情</a></td>
+      </tr>
+
+      <tr>
        <td>044ec1c2c978cb9aee8371bbce069d0a</td>
        <td>CVE-2023-34340</td>
        <td>2023-06-21 08:15:00 <img src="imgs/new.gif" /></td>
@@ -513,14 +521,6 @@
        <td>2023-06-20 10:15:00 <img src="imgs/new.gif" /></td>
        <td>Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Internet Marketing Dojo WP Affiliate Links plugin <= 0.1.1 versions.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-35097">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6dfae03eef849dd54bf2624e1720317c</td>
-       <td>CVE-2023-1862</td>
-       <td>2023-06-20 09:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cloudflare WARP client for Windows (up to v2023.3.381.0) allowed a malicious actor to remotely access the warp-svc.exe binary due to an insufficient access control policy on an IPC Named Pipe. This would have enabled an attacker to trigger WARP connect and disconnect commands, as well as obtaining network diagnostics and application configuration from the target's device. It is important to note that in order to exploit this, a set of requirements would need to be met, such as the target's device must've been reachable on port 445, allowed authentication with NULL sessions or otherwise having knowledge of the target's credentials.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1862">详情</a></td>
       </tr>
 
      </tbody>
@@ -796,6 +796,62 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>eb2ad1e928249a75234acef35a7a7051</td>
+       <td>CNNVD-202306-1510 (CVE-2023-33869)</td>
+       <td>2023-06-20 13:27:02 <img src="imgs/new.gif" /></td>
+       <td>Enphase Energy Envoy 操作系统命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202306-1510">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1a858d8b95ac0e8fca9fc5b92b798b8e</td>
+       <td>CNNVD-202306-1511 (CVE-2023-34563)</td>
+       <td>2023-06-20 13:27:00 <img src="imgs/new.gif" /></td>
+       <td>NETGEAR R6250 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202306-1511">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>71a874df75f2a0352fff163fbbfc4052</td>
+       <td>CNNVD-202306-1512 (CVE-2020-21252)</td>
+       <td>2023-06-20 13:26:58 <img src="imgs/new.gif" /></td>
+       <td>HongCMS 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202306-1512">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8fb958fa119663bdef5e8fc8d63e7fa5</td>
+       <td>CNNVD-202306-1513 (CVE-2023-32274)</td>
+       <td>2023-06-20 13:26:57 <img src="imgs/new.gif" /></td>
+       <td>Enphase Energy Installer Toolkit 信任管理问题漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202306-1513">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fa180fe13ae70aa32236c7175b8fcdae</td>
+       <td>CNNVD-202306-1515 (CVE-2020-21174)</td>
+       <td>2023-06-20 13:26:52 <img src="imgs/new.gif" /></td>
+       <td>liufee CMS 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202306-1515">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2eb67d38cf2fe45ec07bf1911661515a</td>
+       <td>CNNVD-202306-1517 (CVE-2020-21052)</td>
+       <td>2023-06-20 13:25:48 <img src="imgs/new.gif" /></td>
+       <td>ZrLog 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202306-1517">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6f1e4638686829a4a842fa24945af64a</td>
+       <td>CNNVD-202306-1518 (CVE-2020-20969)</td>
+       <td>2023-06-20 13:25:46 <img src="imgs/new.gif" /></td>
+       <td>PluckCMS 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202306-1518">详情</a></td>
+      </tr>
+
+      <tr>
        <td>52f52c57441cf5511180915ef0e315f0</td>
        <td>CNNVD-202306-1445 (CVE-2022-48506)</td>
        <td>2023-06-19 09:24:31</td>
@@ -977,62 +1033,6 @@
        <td>2022-10-21 13:11:12</td>
        <td>Dell PowerScale OneFS 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202210-1602">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9ca9cbb2a337c33899bcdf19d91d7d78</td>
-       <td>CNNVD-202210-1603 (CVE-2022-34437)</td>
-       <td>2022-10-21 13:11:09</td>
-       <td>Dell PowerScale OneFS 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202210-1603">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0a96e1daad10fc7b842abaa350831db2</td>
-       <td>CNNVD-202210-1605 (CVE-2022-26870)</td>
-       <td>2022-10-21 13:11:07</td>
-       <td>Dell EMC PowerStore 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202210-1605">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>35f41caeb97feaaa8373f4dbbbd7a249</td>
-       <td>CNNVD-202210-1606 (CVE-2020-5355)</td>
-       <td>2022-10-21 13:11:05</td>
-       <td>Dell EMC Isilon OneFS 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202210-1606">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d314bbe34de68aa67eddd75a9f4ce40c</td>
-       <td>CNNVD-202210-1609 (CVE-2022-3649)</td>
-       <td>2022-10-21 13:11:03</td>
-       <td>Linux kernel 资源管理错误漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202210-1609">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>351642a659185d5b0604973397c7fa3b</td>
-       <td>CNNVD-202210-1610 (CVE-2022-39259)</td>
-       <td>2022-10-21 13:11:01</td>
-       <td>Skylot Jadx 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202210-1610">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ebbdab47bb0184312da10141d7d010e7</td>
-       <td>CNNVD-202210-1611 (CVE-2022-23462)</td>
-       <td>2022-10-21 13:10:59</td>
-       <td>Softmotions IOWOW 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202210-1611">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8c86f10ec92b3124f4395faa27ee8ae3</td>
-       <td>CNNVD-202210-1517 (CVE-2022-29477)</td>
-       <td>2022-10-20 13:11:25</td>
-       <td>Adobe Iota 信任管理问题漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202210-1517">详情</a></td>
       </tr>
 
      </tbody>
