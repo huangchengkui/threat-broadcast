@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-07-14 14:27:03 -->
+<!-- RELEASE TIME : 2023-07-14 15:28:12 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>a3a5e449cacb4b124d7f94ace258b737</td>
+       <td>CVE-2023-3673</td>
+       <td>2023-07-14 13:15:00 <img src="imgs/new.gif" /></td>
+       <td>SQL Injection in GitHub repository pimcore/pimcore prior to 10.5.24.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3673">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b9e87be13f4f309c044b2c7fbefafb06</td>
+       <td>CVE-2023-3434</td>
+       <td>2023-07-14 13:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper Input Validation in the hyperlink interpretation in Savoir-faire Linux's Jami (version 20222284) on Windows. This allows an attacker to send a custom HTML anchor tag to pass a string value to the Windows QRC Handler through the Jami messenger.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3434">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>805ee9a8bdef6ace9b6add4994c056ff</td>
+       <td>CVE-2023-3433</td>
+       <td>2023-07-14 13:15:00 <img src="imgs/new.gif" /></td>
+       <td>The "nickname" field within Savoir-faire Linux's Jami application is susceptible to a failed state when a user inserts special characters into the field. When present, these special characters, make it so the application cannot create the signature for the user and results in a local denial of service to the application.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3433">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>76015c5e4ae0ce241624c1d78b12782f</td>
+       <td>CVE-2023-2975</td>
+       <td>2023-07-14 12:15:00 <img src="imgs/new.gif" /></td>
+       <td>Issue summary: The AES-SIV cipher implementation contains a bug that causesit to ignore empty associated data entries which are unauthenticated asa consequence.Impact summary: Applications that use the AES-SIV algorithm and want toauthenticate empty data entries as associated data can be mislead by removingadding or reordering such empty entries as these are ignored by the OpenSSLimplementation. We are currently unaware of any such applications.The AES-SIV algorithm allows for authentication of multiple associateddata entries along with the encryption. To authenticate empty data theapplication has to call EVP_EncryptUpdate() (or EVP_CipherUpdate()) withNULL pointer as the output buffer and 0 as the input buffer length.The AES-SIV implementation in OpenSSL just returns success for such a callinstead of performing the associated data authentication operation.The empty data thus will not be authenticated.As this issue does not affect non-empty associated data authentication andwe expect it to be rare for an application to use empty associated dataentries this is qualified as Low severity issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2975">详情</a></td>
+      </tr>
+
+      <tr>
        <td>375881b9420874f61da018e9279408e0</td>
        <td>CVE-2023-3672</td>
        <td>2023-07-14 10:15:00 <img src="imgs/new.gif" /></td>
@@ -489,38 +521,6 @@
        <td>2023-07-13 22:15:00 <img src="imgs/new.gif" /></td>
        <td>An arbitrary file upload vulnerability in /dede/file_manage_control.php of DedeCMS v5.7.109 allows attackers to execute arbitrary code via uploading a crafted PHP file.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37839">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8547741f9108e8d5fece6823cdebca0f</td>
-       <td>CVE-2023-37599</td>
-       <td>2023-07-13 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue in issabel-pbx v.4.0.0-6 allows a remote attacker to obtain sensitive information via the modules directory</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37599">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9f6a856186f46d0393c33cf532c630b6</td>
-       <td>CVE-2023-37598</td>
-       <td>2023-07-13 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>A Cross Site Request Forgery (CSRF) vulnerability in issabel-pbx v.4.0.0-6 allows a remote attacker to cause a denial of service via the delete new virtual fax function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37598">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>da967eb2928de030e82ca4d17bc88733</td>
-       <td>CVE-2023-37468</td>
-       <td>2023-07-13 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Feedbacksystem is a personalized feedback system for students using artificial intelligence. Passwords of users using LDAP login are stored in clear text in the database. The LDAP users password is passed unencrypted in the LoginController.scala and stored in the database when logging in for the first time. Users using only local login or the cas login are not affected. This issue has been patched in version 1.19.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37468">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4338b52a7b4bc02d250fc5d1beb09fb6</td>
-       <td>CVE-2023-36473</td>
-       <td>2023-07-13 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Discourse is an open source discussion platform. A CSP (Content Security Policy) nonce reuse vulnerability could allow XSS attacks to bypass CSP protection. There are no known XSS vectors at the moment, but should one be discovered, this vulnerability would allow the XSS attack to completely bypass CSP. The vulnerability is patched in the latest tests-passed, beta and stable branches.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-36473">详情</a></td>
       </tr>
 
      </tbody>
@@ -796,6 +796,62 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>3558380acfa891e9b40ee6fb92267bbb</td>
+       <td>CNNVD-202307-1275 (CVE-2023-37849)</td>
+       <td>2023-07-13 15:28:11 <img src="imgs/new.gif" /></td>
+       <td>Panda Security VPN 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-1275">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7810ce0570e89018ea5d76b2524c5b7a</td>
+       <td>CNNVD-202307-1276 (CVE-2023-37722)</td>
+       <td>2023-07-13 15:28:09 <img src="imgs/new.gif" /></td>
+       <td>Tenda F1202 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-1276">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e9d2d1c580d86d56e0b1918886dba00a</td>
+       <td>CNNVD-202307-1279 (CVE-2023-37836)</td>
+       <td>2023-07-13 15:26:02 <img src="imgs/new.gif" /></td>
+       <td>libjpeg 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-1279">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b6a4735c1a1eec219c81c4790bcecf0f</td>
+       <td>CNNVD-202307-1280 (CVE-2023-37278)</td>
+       <td>2023-07-13 15:26:00 <img src="imgs/new.gif" /></td>
+       <td>GLPI SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-1280">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>53f4945aa00b355a211b3255a0b9ccbd</td>
+       <td>CNNVD-202307-1281 (CVE-2023-37715)</td>
+       <td>2023-07-13 15:25:58 <img src="imgs/new.gif" /></td>
+       <td>Tenda F1202 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-1281">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>05e6807c1f0e6620c3bbd8954918a20d</td>
+       <td>CNNVD-202307-1282 (CVE-2023-37275)</td>
+       <td>2023-07-13 15:25:56 <img src="imgs/new.gif" /></td>
+       <td>Auto-GPT 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-1282">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bf76e40acfb551ffd5ba9939e0ab77bb</td>
+       <td>CNNVD-202307-1284 (CVE-2023-37837)</td>
+       <td>2023-07-13 15:25:52 <img src="imgs/new.gif" /></td>
+       <td>libjpeg 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-1284">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fd004df045ad01d07eb64518b162b24c</td>
        <td>CNNVD-202307-1168 (CVE-2023-35694)</td>
        <td>2023-07-12 22:28:02</td>
@@ -977,62 +1033,6 @@
        <td>2023-07-10 16:38:47</td>
        <td>Palantir Foundry 安全漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-674">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>de969c2a78f25c6f54965d0b316abd48</td>
-       <td>CNNVD-202307-677 (CVE-2023-37191)</td>
-       <td>2023-07-10 16:37:39</td>
-       <td>Issabel PBX 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-677">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cfc7a58fd6b2a78971fa156b990682b0</td>
-       <td>CNNVD-202307-671 (CVE-2023-24489)</td>
-       <td>2023-07-10 14:31:57</td>
-       <td>Citrix Systems Content Collaboration 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-671">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1a6bbb0a39690c998517cc3d1e992707</td>
-       <td>CNNVD-202307-672 (CVE-2023-30956)</td>
-       <td>2023-07-10 14:31:55</td>
-       <td>Palantir Foundry Issues 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-672">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>940064871cf6671087a26fb048d81ab4</td>
-       <td>CNNVD-202307-673 (CVE-2023-30960)</td>
-       <td>2023-07-10 14:31:53</td>
-       <td>Palantir Foundry job-tracker 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-673">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8a8a3bdd0654ec8fa2c00650cf2b0b82</td>
-       <td>CNNVD-202307-675 (CVE-2023-24490)</td>
-       <td>2023-07-10 14:30:48</td>
-       <td>Citrix Virtual Apps and Desktops 访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-675">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3441c2a63f0aec95cc091c7d4bb461f1</td>
-       <td>CNNVD-202307-679 (CVE-2023-3209)</td>
-       <td>2023-07-10 14:28:32</td>
-       <td>WordPress plugin MStore API 跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-679">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c61caa0dcf1a5dadeacedfcd33cd929f</td>
-       <td>CNNVD-202307-680 (CVE-2023-3270)</td>
-       <td>2023-07-10 14:28:29</td>
-       <td>SICK ICR890-4 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202307-680">详情</a></td>
       </tr>
 
      </tbody>
