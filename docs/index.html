@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-02-20 12:38:43 -->
+<!-- RELEASE TIME : 2024-02-20 14:28:22 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b8aba38af1a774eff45b0bbe10813aac</td>
+       <td>CVE-2024-24794</td>
+       <td>2024-02-20 11:15:08 <img src="imgs/new.gif" /></td>
+       <td>A use-after-free vulnerability exists in the DICOM Element Parsing as implemented in Imaging Data Commons libdicom 1.0.5. A specially crafted DICOM file can cause premature freeing of memory that is used later. To trigger this vulnerability, an attacker would need to induce the vulnerable application to process a malicious DICOM image.The Use-After-Free happens in the `parse_meta_sequence_end()` parsing the Sequence Value Represenations.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24794">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9cf9f848f33665ea32436073d225a420</td>
+       <td>CVE-2024-24793</td>
+       <td>2024-02-20 11:15:08 <img src="imgs/new.gif" /></td>
+       <td>A use-after-free vulnerability exists in the DICOM Element Parsing as implemented in Imaging Data Commons libdicom 1.0.5. A specially crafted DICOM file can cause premature freeing of memory that is used later. To trigger this vulnerability, an attacker would need to induce the vulnerable application to process a malicious DICOM image.The Use-After-Free happens in the `parse_meta_element_create()` parsing the elements in the File Meta Information header.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24793">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e3fe73e2d653c4f0db722139743c2983</td>
+       <td>CVE-2023-7245</td>
+       <td>2024-02-20 11:15:07 <img src="imgs/new.gif" /></td>
+       <td>The nodejs framework in OpenVPN Connect 3.0 through 3.4.3 (Windows)/3.4.7 (macOS) was not properly configured, which allows a local user to execute arbitrary code within the nodejs process context via the ELECTRON_RUN_AS_NODE environment variable</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7245">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>40c0b4e6eccba333cb08be33cf9a6cb6</td>
+       <td>CVE-2024-25609</td>
+       <td>2024-02-20 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>HtmlUtil.escapeRedirect in Liferay Portal 7.2.0 through 7.4.3.12, and older unsupported versions, and Liferay DXP 7.4 before update 9, 7.3 service pack 3, 7.2 fix pack 15 through 18, and older unsupported versions can be circumvented by using two forward slashes, which allows remote attackers to redirect users to arbitrary external URLs via the (1) 'redirect` parameter (2) `FORWARD_URL` parameter, and (3) others parameters that rely on HtmlUtil.escapeRedirect. This vulnerability is the result of an incomplete fix in CVE-2022-28977.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25609">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>de19821832c611b987b4e2ff8fcd2aa2</td>
+       <td>CVE-2024-25608</td>
+       <td>2024-02-20 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>HtmlUtil.escapeRedirect in Liferay Portal 7.2.0 through 7.4.3.18, and older unsupported versions, and Liferay DXP 7.4 before update 19, 7.3 before update 4, 7.2 before fix pack 19, and older unsupported versions can be circumvented by using the 'REPLACEMENT CHARACTER' (U+FFFD), which allows remote attackers to redirect users to arbitrary external URLs via the (1) 'redirect` parameter (2) `FORWARD_URL` parameter, (3) `noSuchEntryRedirect` parameter, and (4) others parameters that rely on HtmlUtil.escapeRedirect.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25608">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5cc2f806d8d4bc4262321df1d995c8df</td>
+       <td>CVE-2024-25607</td>
+       <td>2024-02-20 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>The default password hashing algorithm (PBKDF2-HMAC-SHA1) in Liferay Portal 7.2.0 through 7.4.3.15, and older unsupported versions, and Liferay DXP 7.4 before update 16, 7.3 before update 4, 7.2 before fix pack 17, and older unsupported versions defaults to a low work factor, which allows attackers to quickly crack password hashes.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25607">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0f3627630ee089d9dc8ed517f431fc7c</td>
+       <td>CVE-2023-51770</td>
+       <td>2024-02-20 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>Arbitrary File Read Vulnerability in Apache Dolphinscheduler. This issue affects Apache DolphinScheduler: before 3.2.1. We recommend users to upgrade Apache DolphinScheduler to version 3.2.1, which fixes the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-51770">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6661ba2b40a7b755c39fcbf712128d9b</td>
+       <td>CVE-2023-50270</td>
+       <td>2024-02-20 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>Session Fixation Apache DolphinScheduler before version 3.2.0, which session is still valid after the password change. Users are recommended to upgrade to version 3.2.1, which fixes this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50270">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>565cdcaa93894ee76db0f6f1d5aeda16</td>
+       <td>CVE-2023-49250</td>
+       <td>2024-02-20 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>Because the HttpUtils class did not verify certificates, an attacker that could perform a Man-in-the-Middle (MITM) attack on outgoing https connections could impersonate the server. This issue affects Apache DolphinScheduler: before 3.2.0. Users are recommended to upgrade to version 3.2.1, which fixes the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49250">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d93cfe8129be54ba1ca1924433b3d875</td>
+       <td>CVE-2023-49109</td>
+       <td>2024-02-20 10:15:07 <img src="imgs/new.gif" /></td>
+       <td>Exposure of Remote Code Execution in Apache Dolphinscheduler. This issue affects Apache DolphinScheduler: before 3.2.1. We recommend users to upgrade Apache DolphinScheduler to version 3.2.1, which fixes the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49109">详情</a></td>
+      </tr>
+
+      <tr>
        <td>0d66ae7ccc8dd80ebc22f0c3f6957e32</td>
        <td>CVE-2022-45320</td>
        <td>2024-02-20 05:15:07 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2024-02-19 13:15:07 <img src="imgs/new.gif" /></td>
        <td>pgjdbc, the PostgreSQL JDBC Driver, allows attacker to inject SQL if using PreferQueryMode=SIMPLE. Note this is not the default. In the default mode there is no vulnerability. A placeholder for a numeric value must be immediately preceded by a minus. There must be a second placeholder for a string value after the first placeholder; both must be on the same line. By constructing a matching string payload, the attacker can inject SQL to alter the query,bypassing the protections that parameterized queries bring against SQL Injection attacks. Versions before 42.7.2, 42.6.1, 42.5.5, 42.4.4, 42.3.9, and 42.2.8 are affected.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1597">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6aa334efde52ba1564057fd534fbc0f0</td>
-       <td>CVE-2023-6249</td>
-       <td>2024-02-18 08:15:07</td>
-       <td>Signed to unsigned conversion esp32_ipm_send</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6249">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f1ef85c0727110356751c1b5b41b1437</td>
-       <td>CVE-2023-5779</td>
-       <td>2024-02-18 08:15:06</td>
-       <td>can: out of bounds in remove_rx_filter function</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5779">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a97e731ef00c99a94abe23dbc80de2e4</td>
-       <td>CVE-2023-6749</td>
-       <td>2024-02-18 07:15:10</td>
-       <td>Unchecked length coming from user input in settings shell</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6749">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ddb460ac5c8ba98e7f779b427f391446</td>
-       <td>CVE-2023-52381</td>
-       <td>2024-02-18 07:15:09</td>
-       <td>Script injection vulnerability in the email module.Successful exploitation of this vulnerability may affect service confidentiality, integrity, and availability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52381">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>81c8708c5f6916d7e5bc225500d0391f</td>
-       <td>CVE-2023-52380</td>
-       <td>2024-02-18 07:15:09</td>
-       <td>Vulnerability of improper access control in the email module.Successful exploitation of this vulnerability may affect service confidentiality.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52380">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d5614f866e8067ec9308d9ea256019a7</td>
-       <td>CVE-2023-52379</td>
-       <td>2024-02-18 07:15:09</td>
-       <td>Permission control vulnerability in the calendarProvider module.Successful exploitation of this vulnerability may affect service confidentiality.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52379">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>26fa7882883672fe4327e452286823e4</td>
-       <td>CVE-2023-52378</td>
-       <td>2024-02-18 07:15:08</td>
-       <td>Vulnerability of incorrect service logic in the WindowManagerServices module.Successful exploitation of this vulnerability may cause features to perform abnormally.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52378">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d984c43eb67ac9e78f4412dc0a6bf393</td>
-       <td>CVE-2022-48621</td>
-       <td>2024-02-18 07:15:07</td>
-       <td>Vulnerability of missing authentication for critical functions in the Wi-Fi module.Successful exploitation of this vulnerability may affect service confidentiality.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48621">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2c5740c783e56d949d078f331921c13b</td>
-       <td>CVE-2023-52377</td>
-       <td>2024-02-18 06:15:08</td>
-       <td>Vulnerability of input data not being verified in the cellular data module.Successful exploitation of this vulnerability may cause out-of-bounds access.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52377">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d10075fe712ef3b4bb32e008116712ae</td>
-       <td>CVE-2023-52376</td>
-       <td>2024-02-18 06:15:08</td>
-       <td>Information management vulnerability in the Gallery module.Successful exploitation of this vulnerability may affect service confidentiality.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52376">详情</a></td>
       </tr>
 
      </tbody>
